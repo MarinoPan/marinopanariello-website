@@ -1,9 +1,11 @@
 "use client";
 import { motion } from "framer-motion";
+import { HeroDoodles } from "./HeroDoodles";
 
 export const Hero = () => {
     return (
-        <section className="h-full">
+        <section className="h-full relative">
+            <HeroDoodles />
             <div className="text-primary w-full h-[calc(100vh-88px)] justify-center flex flex-col gap-4">
                 <motion.div
                     initial={{ opacity: 0, x: 50 }}
