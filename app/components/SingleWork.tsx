@@ -10,7 +10,7 @@ interface SingleWorkProps {
   results: string;
   roles: string;
   about: string;
-  images: string[]; // 2–3 immagini da mostrare sfasate
+  images: readonly string[]; // 2–3 immagini da mostrare sfasate
 }
 
 export const SingleWork = ({ project, year, results, roles, about, images }: SingleWorkProps) => {
