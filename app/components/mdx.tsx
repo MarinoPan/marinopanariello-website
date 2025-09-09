@@ -45,7 +45,12 @@ function CustomLink(props) {
 }
 
 function RoundedImage(props) {
-  return <Image alt={props.alt} className="rounded-lg" {...props} />
+  // Open full-size in new tab on click for better viewing
+  return (
+    <a href={props.src} target="_blank" rel="noopener noreferrer">
+      <Image alt={props.alt} {...props} />
+    </a>
+  )
 }
 
 function Code({ children, ...props }) {

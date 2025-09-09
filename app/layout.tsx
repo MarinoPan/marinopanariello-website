@@ -46,12 +46,13 @@ export default function RootLayout({
     return (
         <html lang="en" className={`${satoshi.variable}`}>
             <body className={`antialised bg-background  ${satoshi.className}`}>
-                <main className="flex-auto min-w-0 flex flex-col px-6">
+                <a href="#content" className="skip-link">Skip to content</a>
+                <main id="content" className="flex-auto min-w-0 flex flex-col px-6">
                     <div className="fixed w-full opacity-5 h-screen bg-[url(/images/noise.jpg)] bg-repeat -z-1"></div>
                     <BackgroundLines />
                     <Navbar />
                     {children}
-                    {/* <Footer /> */}
+                    <Footer />
                     <Analytics />
                     <SpeedInsights />
                 </main>
