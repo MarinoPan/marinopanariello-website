@@ -35,8 +35,8 @@
 
 ## Cosa è stato fatto (log)
 
-- [TODO] Inizializzazione task e verifica stato.
-- [TODO] Push `branch-refactor` → `origin/branch-refactor`.
-- [TODO] Merge `branch-refactor` → `main` locale.
-- [TODO] Push `main` → `origin/main` (o apertura PR se bloccato).
-
+- [FATTO] Inizializzazione task e verifica stato (branch corrente: `branch-refactor`, remoto `origin`).
+- [FATTO] Commit documento task su `branch-refactor` (`4bc7cd1`, "docs: aggiungi log task push/merge main").
+- [FATTO] Push `branch-refactor` → `origin/branch-refactor` (upstream impostato).
+- [FATTO] Merge `branch-refactor` → `main` locale con `--no-ff` (commit di merge `777aba1`).
+- [FATTO] Push `main` → `origin/main` (merge pubblicato su GitHub).
