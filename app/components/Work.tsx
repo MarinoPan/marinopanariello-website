@@ -5,11 +5,11 @@ import { SectionHeader } from "./SectionHeader";
 const projects = [
   {
     project: "Docsity",
-    year: "2021",
-    results: "+30% engagement, -20% bounce",
-    roles: "Product Design, Frontend",
+    year: "lug 2022 - oggi",
+    results: "+137% visualizzazioni documento; +56% nuovi upload; +43% ricavi ricorrenti",
+    roles: "Product Designer · Roma, Italia",
     about:
-      "Redesign of the learning platform with improved IA, design system and modern frontend.",
+      "Ho ridisegnato dashboard, homepage, flusso di upload e landing Docsity AI, creando un modello di documentazione condiviso e sviluppando le pagine chiave direttamente in Next.js con il design system.",
     images: [
       "/images/projects/docsity-1-after.jpg",
       "/images/projects/docsity-2-after.jpg",
@@ -17,16 +17,42 @@ const projects = [
     ],
   },
   {
-    project: "Coraly",
-    year: "2022",
-    results: "Design System foundations",
-    roles: "Design Lead",
+    project: "Lasting Dynamics",
+    year: "feb 2018 - lug 2022",
+    results: "-30% cycle time; +25% efficienza team; +1k store generati",
+    roles: "UI/UX Designer · Napoli (IT) & LPA (ES)",
     about:
-      "Built a scalable DS covering components, theming and guidelines.",
+      "Ho guidato progetti web e mobile end-to-end, dalla ricerca ai test, su workflow management, e-commerce builder, piattaforme neuroscience e CRM dedicati.",
     images: [
       "/images/projects/coraly-01.jpg",
       "/images/projects/coraly-02.jpg",
       "/images/projects/coraly-03.jpg",
+    ],
+  },
+  {
+    project: "Freelancer",
+    year: "2016 - oggi",
+    results: "40+ siti, e-commerce e app gestionali consegnati",
+    roles: "Design Engineer",
+    about:
+      "Supporto startup e PMI nella definizione di brand, UX e sviluppo front-end con Next.js, CMS headless e design system leggeri, seguendo il prodotto dalla strategia al lancio.",
+    images: [
+      "/images/projects/fabloo.png",
+      "/images/projects/vetrinalive-02.jpg",
+      "/images/projects/f1livestats.png",
+    ],
+  },
+  {
+    project: "VetrinaLive",
+    year: "2020-2022",
+    results: "Design system completo, gestione store end-to-end",
+    roles: "UI/UX Designer",
+    about:
+      "E-commerce builder senza commissioni con dashboard KPI, gestione catalogo e personalizzazione guidata.",
+    images: [
+      "/images/projects/vetrinalive-01.jpg",
+      "/images/projects/vetrinalive-02.jpg",
+      "/images/projects/vetrinalive-03.jpg",
     ],
   },
 ];

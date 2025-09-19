@@ -7,7 +7,7 @@ import { Services } from "./components/Services";
 
 export default function Page() {
   return (
-    <div className="flex flex-col gap-28">
+    <div className="flex flex-col gap-20 md:gap-28">
       <Hero />
       <SitesDeveloped showHeader={false} />
       <LaunchedProjects />

@@ -1,5 +1,7 @@
 "use client";
 
+import { SectionHeader } from "./SectionHeader";
+
 export const Services = () => {
   const items = [
     {
@@ -22,12 +24,23 @@ export const Services = () => {
 
   return (
     <section className="prose h-full">
-      <h2 className="m-0">Services</h2>
-      <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      <SectionHeader
+        kicker="My"
+        title="Services"
+        subtitle="What can i do"
+        align="left"
+        variant="underline"
+      />
+      <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-4">
         {items.map((it) => (
-          <div key={it.title} className="h-full border border-gray-light/70 p-6 flex flex-col justify-between">
-            <h3 className="text-2xl m-0 leading-tight">{it.title}</h3>
-            <p className="text-primary/70 m-0 mt-3 text-base leading-relaxed">{it.desc}</p>
+          <div
+            key={it.title}
+            className="h-full flex flex-col justify-between pr-6"
+          >
+            <h4 className="text-2xl m-0 leading-tight">{it.title}</h4>
+            <p className="text-primary/70 m-0 mt-3 text-base leading-relaxed">
+              {it.desc}
+            </p>
           </div>
         ))}
       </div>

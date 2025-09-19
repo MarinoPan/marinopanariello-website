@@ -3,11 +3,12 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 
-const navItems = {
-  "/": { name: "home" },
-  "/works": { name: "works" },
-  "/blog": { name: "blog" },
-};
+const navItems = [
+  { href: "/", name: "home", external: false },
+  { href: "/works", name: "works", external: false },
+  { href: "/about", name: "about", external: false },
+  { href: "https://github.com/MarinoPan", name: "github", external: true },
+];
 
 export function Navbar() {
   const pathname = usePathname();
@@ -28,13 +29,16 @@ export function Navbar() {
           </Link>
         </div>
         <div className="flex flex-row space-x-0">
-          {Object.entries(navItems).map(([path, { name }]) => {
+          {navItems.map(({ href, name, external }) => {
+            const isActive = !external && pathname === href;
             return (
               <Link
-                key={path}
-                href={path}
-                aria-current={pathname === path ? "page" : undefined}
+                key={href}
+                href={href}
+                aria-current={isActive ? "page" : undefined}
                 className="transition-all text-primary hover:underline flex align-middle relative py-1 px-2"
+                target={external ? "_blank" : undefined}
+                rel={external ? "noopener noreferrer" : undefined}
               >
                 {name}
               </Link>

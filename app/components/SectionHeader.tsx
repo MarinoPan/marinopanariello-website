@@ -20,7 +20,12 @@ export function SectionHeader({ kicker, title, subtitle, align = "left", variant
         <span className="text-xs uppercase tracking-[0.18em] text-primary/60">{kicker}</span>
       )}
       <div className="w-full">
-        <h2 className="m-0">{title}</h2>
+        <div className="flex flex-wrap items-baseline gap-3">
+          <h2 className="m-0">{title}</h2>
+          {subtitle && (
+            <p className="m-0 ml-auto text-right text-primary/60 text-base">{subtitle}</p>
+          )}
+        </div>
         {variant === "underline" && (
           <motion.div
             aria-hidden
@@ -32,10 +37,6 @@ export function SectionHeader({ kicker, title, subtitle, align = "left", variant
           />
         )}
       </div>
-      {subtitle && (
-        <p className="m-0 text-primary/60 text-base">{subtitle}</p>
-      )}
     </div>
   );
 }
-
