@@ -10,6 +10,9 @@
 
   /* Background */
   --color-background: #faf9f7; /* Bianco sporco/off-white per sfondo */
+
+  /* Accent */
+  --color-highlight: #ffd600; /* Giallo brand per elementi in evidenza */
 }
 
 ::selection {
@@ -39,6 +42,7 @@
     --color-gray-light: #404040;
     --color-gray-dark: #d4d4d4;
     --color-background: #171717;
+    --color-highlight: #ffd600;
   }
 }
 

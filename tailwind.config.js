@@ -16,6 +16,7 @@ module.exports = {
                 "gray-light": "var(--color-gray-light)",
                 "gray-dark": "var(--color-gray-dark)",
                 background: "var(--color-background)",
+                highlight: "var(--color-highlight)",
             },
         },
     },

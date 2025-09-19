@@ -162,7 +162,7 @@ export const SingleWork = ({
             <button
               key={`${src}-${i}`}
               type="button"
-              className="group absolute inset-x-4 aspect-[4/3] overflow-hidden border border-primary/10 bg-white shadow-md transition duration-500 hover:-translate-y-1 hover:shadow-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/60"
+              className="group absolute inset-x-4 aspect-[4/3] overflow-hidden border border-highlight bg-white shadow-md transition duration-500 hover:-translate-y-1 hover:shadow-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/60"
               style={{
                 top: `${i * 32}px`,
                 left: `${i * 6}px`,
@@ -198,7 +198,7 @@ export const SingleWork = ({
               <motion.button
                 key={`${src}-${i}`}
                 type="button"
-                className={`group absolute aspect-[16/11] overflow-hidden border border-primary/10 bg-white/75 ${slot.shadow} transition duration-500 hover:-translate-y-2 hover:shadow-2xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/60`}
+                className={`group absolute aspect-[16/11] overflow-hidden border border-highlight bg-white/75 ${slot.shadow} transition duration-500 hover:-translate-y-2 hover:shadow-2xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/60`}
                 style={{
                   top: slot.top,
                   left: slot.left,

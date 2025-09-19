@@ -27,6 +27,14 @@ export const metadata: Metadata = {
     "UX Engineering",
     "Marino Panariello",
   ],
+  icons: {
+    icon: [
+      {
+        url: "/favicon.svg",
+        type: "image/svg+xml",
+      },
+    ],
+  },
   authors: [{ name: "Marino Panariello" }],
   creator: "Marino Panariello",
   openGraph: {
