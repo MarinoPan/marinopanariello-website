@@ -27,16 +27,16 @@ export const metadata = {
 };
 
 export default function Page() {
-  // Elenco completo dei lavori (Design + My Projects), nessun "websites developed" qui
+  // Full list of case studies and personal projects; exclude "websites developed" here
   const works = [
     {
       project: "Docsity",
-      year: "lug 2022 - oggi",
+      year: "Jul 2022 – Present",
       results:
-        "+137% visualizzazioni documento; +56% nuovi upload; +43% ricavi ricorrenti",
-      roles: "Product Designer · Roma, Italia",
+        "+137% document views; +56% new uploads; +43% recurring revenue",
+      roles: "Product Designer · Rome, Italy",
       about:
-        "Ho guidato il redesign di dashboard, homepage, flusso di upload e landing Docsity AI, introducendo un modello di documentazione condiviso e sviluppando le pagine chiave in Next.js partendo dal design system.",
+        "I led the redesign of the dashboard, homepage, upload flow, and Docsity AI landing, introducing a shared documentation model and shipping key pages in Next.js starting from the design system.",
       images: [
         "/images/projects/docsity-1-after.jpg",
         "/images/projects/docsity-2-after.jpg",
@@ -46,10 +46,10 @@ export default function Page() {
     {
       project: "Rosmariano",
       year: "2020-2021",
-      results: "Economia play-to-earn con wallet crypto e skill tree",
+      results: "Play-to-earn economy with crypto wallet and skill tree",
       roles: "UI/UX Designer",
       about:
-        "Esperienza gaming su blockchain che collega azioni virtuali e iniziative sostenibili reali, con mappe interattive e progressione a skill.",
+        "Blockchain gaming experience that connects virtual farming with real sustainability initiatives, featuring interactive maps and skill-based progression.",
       images: [
         "/images/projects/rosmariano-01.jpg",
         "/images/projects/rosmariano-02.jpg",
@@ -59,10 +59,10 @@ export default function Page() {
     {
       project: "Diagnostic Biochips",
       year: "2018-2020",
-      results: "Suite desktop+web, +83% efficienza nel trattamento dati",
+      results: "Desktop + web suite, +83% efficiency in data processing",
       roles: "UI/UX Designer",
       about:
-        "Interfacce modulari per laboratori neuroscientifici con dashboard configurabili, viste Cluster/Waveform e automazioni data-driven.",
+        "Modular interfaces for neuroscience labs with configurable dashboards, Cluster/Waveform views, and data-driven automations.",
       images: [
         "/images/projects/labbox-1-after.jpg",
         "/images/projects/labbox-2.jpg",
@@ -71,10 +71,10 @@ export default function Page() {
     {
       project: "VetrinaLive",
       year: "2020-2022",
-      results: "Design system completo, gestione store end-to-end",
+      results: "Full design system and end-to-end store management",
       roles: "UI/UX Designer",
       about:
-        "E-commerce builder senza commissioni con dashboard KPI, gestione catalogo, ordini e personalizzazione guidata dello shop.",
+        "Commission-free e-commerce builder with KPI dashboards, catalog management, orders, and guided shop personalization.",
       images: [
         "/images/projects/vetrinalive-01.jpg",
         "/images/projects/vetrinalive-02.jpg",

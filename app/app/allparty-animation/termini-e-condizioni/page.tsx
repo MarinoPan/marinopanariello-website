@@ -1,122 +1,113 @@
 import { LegalLayout } from '../../../components/LegalLayout'
 
 export const metadata = {
-  title: 'Termini e Condizioni – All Party Animation',
-  description: "Termini d'uso del gestionale All Party Animation per il personale autorizzato.",
+  title: 'Terms and Conditions – All Party Animation',
+  description: 'Terms of use for the All Party Animation management platform reserved for authorised staff.',
 }
 
 export default function Page() {
   return (
     <LegalLayout>
       <header className="space-y-2 border-b border-slate-200 pb-6">
-        <h1 className="text-3xl font-semibold tracking-tight">Termini e Condizioni</h1>
-        <p className="text-slate-600">Ultimo aggiornamento: 16 settembre 2025</p>
+        <h1 className="text-3xl font-semibold tracking-tight">Terms and Conditions</h1>
+        <p className="text-slate-600">Last updated: 16 September 2025</p>
       </header>
 
       <section className="space-y-4">
-        <h2 className="text-2xl font-semibold tracking-tight text-slate-800">1. Informazioni sul Fornitore</h2>
+        <h2 className="text-2xl font-semibold tracking-tight text-slate-800">1. Provider information</h2>
         <p>
-          Il gestionale <strong>All Party Animation</strong> è di proprietà di <strong>Marino Panariello</strong>, con sede legale in Alcide De Gasperi 49, 80059 Torre
-          del Greco (NA), Italia. Contatti:{' '}
-          <a className="text-blue-600 underline-offset-4 hover:underline" href="mailto:marinopanariello@gmail.com">marinopanariello@gmail.com</a>, PEC{' '}
-          <a className="text-blue-600 underline-offset-4 hover:underline" href="mailto:marinopanariello@pec.it">marinopanariello@pec.it</a>, sito ufficiale{' '}
+          The <strong>All Party Animation</strong> management platform is owned by <strong>Marino Panariello</strong>, registered at Alcide De Gasperi 49, 80059 Torre del Greco (NA), Italy. Contacts:{' '}
+          <a className="text-blue-600 underline-offset-4 hover:underline" href="mailto:marinopanariello@gmail.com">marinopanariello@gmail.com</a>, Certified Email{' '}
+          <a className="text-blue-600 underline-offset-4 hover:underline" href="mailto:marinopanariello@pec.it">marinopanariello@pec.it</a>, official website{' '}
           <a className="text-blue-600 underline-offset-4 hover:underline" href="https://marinopanariello.com">https://marinopanariello.com</a>.
         </p>
       </section>
 
       <section className="space-y-4">
-        <h2 className="text-2xl font-semibold tracking-tight text-slate-800">2. Oggetto</h2>
+        <h2 className="text-2xl font-semibold tracking-tight text-slate-800">2. Purpose</h2>
         <p>
-          I presenti Termini disciplinano l’uso interno del gestionale “All Party Animation” (di seguito, “Piattaforma”), destinato all’agenzia di animazione e
-          al relativo personale autorizzato. La Piattaforma offre funzionalità di gestione eventi, animatori, materiali e comunicazioni interne. È vietato
-          qualsiasi utilizzo diverso da quello autorizzato.
+          These Terms govern the internal use of the “All Party Animation” management platform (hereafter, the “Platform”), reserved for the animation agency and its authorised staff. The Platform provides event management, talent coordination, asset tracking, and internal communication features. Any use beyond the authorised scope is prohibited.
         </p>
       </section>
 
       <section className="space-y-4">
-        <h2 className="text-2xl font-semibold tracking-tight text-slate-800">3. Accesso e Registrazione</h2>
+        <h2 className="text-2xl font-semibold tracking-tight text-slate-800">3. Access and registration</h2>
         <ul className="list-disc space-y-2 pl-6">
-          <li>Per accedere è necessario un account creato o approvato dal titolare.</li>
-          <li>L’utente è responsabile della riservatezza delle proprie credenziali e di ogni attività compiuta con il proprio account.</li>
-          <li>È vietata la condivisione dell’account con terzi o l’utilizzo da parte di utenti non autorizzati.</li>
+          <li>Access requires an account created or approved by the owner.</li>
+          <li>Users are responsible for keeping their credentials confidential and for all activity performed through their account.</li>
+          <li>Account sharing with third parties or use by unauthorised persons is forbidden.</li>
         </ul>
       </section>
 
       <section className="space-y-4">
-        <h2 className="text-2xl font-semibold tracking-tight text-slate-800">4. Utilizzo Consentito</h2>
+        <h2 className="text-2xl font-semibold tracking-tight text-slate-800">4. Acceptable use</h2>
         <p>
-          L’utente si impegna a utilizzare la Piattaforma nel rispetto delle normative vigenti, incluse quelle in materia di privacy, diritto d’autore e
-          sicurezza informatica. È vietato:
+          Users agree to operate the Platform in compliance with applicable laws, including privacy, copyright, and information security regulations. It is forbidden to:
         </p>
         <ul className="list-disc space-y-2 pl-6">
-          <li>Accedere a dati o risorse cui non si è autorizzati.</li>
-          <li>Modificare, copiare o diffondere contenuti senza autorizzazione.</li>
-          <li>Introdurre malware, tentare attacchi o compromettere la sicurezza della Piattaforma.</li>
+          <li>Access data or resources without proper authorisation.</li>
+          <li>Modify, copy, or distribute content without permission.</li>
+          <li>Inject malware, attempt attacks, or compromise the Platform&apos;s security.</li>
         </ul>
       </section>
 
       <section className="space-y-4">
-        <h2 className="text-2xl font-semibold tracking-tight text-slate-800">5. Servizi Esterni e Componenti</h2>
-        <p>La Piattaforma utilizza servizi esterni per garantire funzionalità tecniche:</p>
+        <h2 className="text-2xl font-semibold tracking-tight text-slate-800">5. Third-party services</h2>
+        <p>The Platform relies on external providers to ensure technical functionality:</p>
         <ul className="list-disc space-y-2 pl-6">
           <li>
-            <strong>Supabase</strong> per autenticazione e gestione dati.
+            <strong>Supabase</strong> for authentication and data management.
           </li>
           <li>
-            <strong>Vercel</strong> per hosting e raccolta di dati analitici aggregati.
+            <strong>Vercel</strong> for hosting and aggregate analytics.
           </li>
           <li>
-            <strong>Firebase / Capacitor Push Notifications</strong> per la gestione dei token di notifica e l’invio di notifiche push.
+            <strong>Firebase / Capacitor Push Notifications</strong> to manage notification tokens and deliver push notifications.
           </li>
         </ul>
-        <p>L’uso della Piattaforma implica l’accettazione dei termini di tali servizi terzi, per quanto compatibili.</p>
+        <p>Using the Platform entails acceptance of the relevant third-party terms, where applicable.</p>
       </section>
 
       <section className="space-y-4">
-        <h2 className="text-2xl font-semibold tracking-tight text-slate-800">6. Proprietà Intellettuale</h2>
+        <h2 className="text-2xl font-semibold tracking-tight text-slate-800">6. Intellectual property</h2>
         <p>
-          Tutti i contenuti, il codice sorgente, il design e la documentazione della Piattaforma sono di proprietà di Marino Panariello. È vietata qualsiasi
-          riproduzione o utilizzo oltre gli scopi operativi interni senza consenso scritto.
+          All content, source code, design, and documentation of the Platform belong to Marino Panariello. Reproduction or use beyond internal operational purposes is prohibited without written consent.
         </p>
       </section>
 
       <section className="space-y-4">
-        <h2 className="text-2xl font-semibold tracking-tight text-slate-800">7. Limitazione di Responsabilità</h2>
+        <h2 className="text-2xl font-semibold tracking-tight text-slate-800">7. Limitation of liability</h2>
         <p>
-          Il titolare adotta misure ragionevoli per garantire continuità e sicurezza del servizio, ma non può garantire assenza totale di interruzioni. Nei
-          limiti consentiti dalla legge, è esclusa ogni responsabilità per danni indiretti, perdita di profitti o dati derivanti dall’uso della Piattaforma.
+          The owner adopts reasonable measures to ensure service continuity and security but cannot guarantee the complete absence of interruptions. To the extent permitted by law, all liability for indirect damages, loss of profits, or data arising from use of the Platform is excluded.
         </p>
       </section>
 
       <section className="space-y-4">
-        <h2 className="text-2xl font-semibold tracking-tight text-slate-800">8. Privacy e Cookie</h2>
+        <h2 className="text-2xl font-semibold tracking-tight text-slate-800">8. Privacy and cookies</h2>
         <p>
-          Il trattamento dei dati personali è disciplinato dalla{' '}
-          <a className="text-blue-600 underline-offset-4 hover:underline" href="/app/allparty-animation/privacy-policy.html">Privacy Policy</a> e l’utilizzo dei
-          cookie è regolato dalla{' '}
-          <a className="text-blue-600 underline-offset-4 hover:underline" href="/app/allparty-animation/cookie-policy.html">Cookie Policy</a>. L’utente è tenuto a consultarle regolarmente.
+          Personal data processing is governed by the{' '}
+          <a className="text-blue-600 underline-offset-4 hover:underline" href="/app/allparty-animation/privacy-policy.html">Privacy Policy</a>, and cookie usage is covered by the{' '}
+          <a className="text-blue-600 underline-offset-4 hover:underline" href="/app/allparty-animation/cookie-policy.html">Cookie Policy</a>. Users must review them regularly.
         </p>
       </section>
 
       <section className="space-y-4">
-        <h2 className="text-2xl font-semibold tracking-tight text-slate-800">9. Modifiche ai Termini</h2>
+        <h2 className="text-2xl font-semibold tracking-tight text-slate-800">9. Changes to the Terms</h2>
         <p>
-          I Termini possono essere aggiornati per motivi tecnici, normativi o organizzativi. Le versioni aggiornate sono pubblicate sul sito ufficiale; l’uso
-          continuato della Piattaforma implica accettazione delle modifiche.
+          The Terms may be updated for technical, regulatory, or organisational reasons. Updated versions are published on the official website; continued use of the Platform implies acceptance of any changes.
         </p>
       </section>
 
       <section className="space-y-4">
-        <h2 className="text-2xl font-semibold tracking-tight text-slate-800">10. Legge Applicabile e Foro Competente</h2>
+        <h2 className="text-2xl font-semibold tracking-tight text-slate-800">10. Governing law and jurisdiction</h2>
         <p>
-          I Termini sono disciplinati dalla legge italiana. Per ogni controversia è competente in via esclusiva il Foro di Napoli, salvo diversa disposizione
-          inderogabile di legge.
+          These Terms are governed by Italian law. Any dispute falls under the exclusive jurisdiction of the Court of Naples, unless mandatory law provides otherwise.
         </p>
       </section>
 
       <footer className="border-t border-slate-200 pt-6 text-sm text-slate-500">
         <p>
-          Per domande sui Termini, scrivi a{' '}
+          For questions about these Terms, contact{' '}
           <a className="text-blue-600 underline-offset-4 hover:underline" href="mailto:marinopanariello@gmail.com">marinopanariello@gmail.com</a>.
         </p>
       </footer>

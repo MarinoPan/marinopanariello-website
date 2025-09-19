@@ -1,148 +1,153 @@
 import { LegalLayout } from '../../../components/LegalLayout'
 
 export const metadata = {
-  title: 'Termini e Condizioni - Fiabe Magiche',
-  description: 'Termini e Condizioni d’uso dell’app Fiabe Magiche per la creazione di storie personalizzate.',
+  title: 'Terms of Service - Fiabe Magiche',
+  description: 'Terms of service for the Fiabe Magiche app, covering usage rules, subscriptions, data protection, and user rights.',
 }
 
 export default function Page() {
   return (
     <LegalLayout>
       <header className="space-y-2 border-b border-slate-200 pb-6">
-        <h1 className="text-3xl font-semibold tracking-tight">TERMINI E CONDIZIONI D&apos;USO</h1>
+        <h1 className="text-3xl font-semibold tracking-tight">TERMS OF SERVICE</h1>
         <p>
           <strong>Fiabe Magiche</strong>
           <br />
-          <em>Ultimo aggiornamento: 14 Agosto 2025</em>
+          <em>Last updated: 14 August 2025</em>
         </p>
       </header>
 
       <section className="rounded-xl border-l-4 border-rose-500 bg-rose-50 px-5 py-4">
-        <strong>IMPORTANTE:</strong> Leggendo e utilizzando questa applicazione, accetti integralmente questi Termini e Condizioni. Se non accetti questi termini, non utilizzare l&apos;applicazione.
+        <strong>IMPORTANT:</strong> By reading and using this application you fully accept these Terms of Service. If you do not agree, please refrain from using the app.
       </section>
 
       <section className="space-y-4">
-        <h2 className="text-2xl font-semibold tracking-tight text-slate-800">1. INFORMAZIONI GENERALI</h2>
+        <h2 className="text-2xl font-semibold tracking-tight text-slate-800">1. GENERAL INFORMATION</h2>
 
         <div className="space-y-3">
-          <h3 className="text-xl font-semibold text-slate-700">1.1 Chi siamo</h3>
+          <h3 className="text-xl font-semibold text-slate-700">1.1 About us</h3>
           <p>
-            <strong>Fiabe Magiche</strong> è un&apos;applicazione mobile sviluppata da:
+            <strong>Fiabe Magiche</strong> is a mobile application developed by:
           </p>
           <div className="rounded-xl border border-slate-200 bg-slate-50 px-5 py-4">
             <p>
-              <strong>Sviluppatore:</strong> Marino Panariello
+              <strong>Developer:</strong> Marino Panariello
               <br />
-              <strong>Email:</strong> <a className="text-blue-600 underline-offset-4 hover:underline" href="mailto:marinopanariello@gmail.com">marinopanariello@gmail.com</a>
+              <strong>Email:</strong>{' '}
+              <a className="text-blue-600 underline-offset-4 hover:underline" href="mailto:marinopanariello@gmail.com">
+                marinopanariello@gmail.com
+              </a>
             </p>
           </div>
         </div>
 
         <div className="space-y-3">
-          <h3 className="text-xl font-semibold text-slate-700">1.2 Cosa offriamo</h3>
-          <p>L&apos;applicazione permette di creare storie personalizzate per bambini (0-12 anni) utilizzando intelligenza artificiale, con generazione di:</p>
+          <h3 className="text-xl font-semibold text-slate-700">1.2 What we provide</h3>
+          <p>The app allows families to create personalised stories for children aged 0–12 using artificial intelligence, generating:</p>
           <ul className="list-disc space-y-2 pl-6">
-            <li>Testi narrativi personalizzati</li>
-            <li>Immagini illustrative generate dall&apos;AI</li>
-            <li>Audio e narrazione delle storie</li>
-            <li>Funzionalità di salvataggio e organizzazione</li>
+            <li>Custom narrative text</li>
+            <li>Illustrations produced by AI</li>
+            <li>Audio narration for every story</li>
+            <li>Tools to save and organise content</li>
           </ul>
         </div>
       </section>
 
       <section className="space-y-4">
-        <h2 className="text-2xl font-semibold tracking-tight text-slate-800">2. ACCETTAZIONE DEI TERMINI</h2>
-        <p>Utilizzando l&apos;applicazione, confermi di:</p>
+        <h2 className="text-2xl font-semibold tracking-tight text-slate-800">2. ACCEPTANCE OF THE TERMS</h2>
+        <p>By using the application you confirm that you:</p>
         <ol className="list-decimal space-y-2 pl-6">
-          <li>Aver letto e compreso integralmente questi Termini</li>
-          <li>Accettare tutti i termini e condizioni qui specificati</li>
-          <li>Avere l&apos;autorità legale per accettare questi termini</li>
-          <li>Essere maggiorenne o avere il consenso di un genitore/tutore</li>
+          <li>Have read and fully understood these Terms</li>
+          <li>Agree to all conditions listed here</li>
+          <li>Have the legal authority to accept these Terms</li>
+          <li>Are of legal age or have parental/guardian consent</li>
         </ol>
       </section>
 
       <section className="space-y-4">
-        <h2 className="text-2xl font-semibold tracking-tight text-slate-800">3. UTILIZZO DELL&apos;APPLICAZIONE</h2>
+        <h2 className="text-2xl font-semibold tracking-tight text-slate-800">3. USING THE APPLICATION</h2>
 
         <div className="space-y-3">
-          <h3 className="text-xl font-semibold text-slate-700">3.1 Licenza d&apos;uso</h3>
-          <p>Ti concediamo una licenza limitata, non esclusiva, non trasferibile e revocabile per utilizzare l&apos;applicazione esclusivamente per uso personale e non commerciale.</p>
+          <h3 className="text-xl font-semibold text-slate-700">3.1 Licence</h3>
+          <p>
+            We grant you a limited, non-exclusive, non-transferable, revocable licence to use the app for personal, non-commercial purposes only.
+          </p>
         </div>
 
         <div className="space-y-3">
-          <h3 className="text-xl font-semibold text-slate-700">3.2 Usi consentiti</h3>
+          <h3 className="text-xl font-semibold text-slate-700">3.2 Permitted use</h3>
           <ul className="list-disc space-y-2 pl-6">
-            <li>Creare storie per uso personale e familiare</li>
-            <li>Salvare e organizzare le storie create</li>
-            <li>Condividere storie con familiari e amici</li>
-            <li>Utilizzare le funzionalità audio per la lettura</li>
+            <li>Create stories for personal and family use</li>
+            <li>Save and organise generated stories</li>
+            <li>Share stories with family members and friends</li>
+            <li>Use the narration features to read stories aloud</li>
           </ul>
         </div>
 
         <div className="space-y-3">
-          <h3 className="text-xl font-semibold text-slate-700">3.3 Usi vietati</h3>
+          <h3 className="text-xl font-semibold text-slate-700">3.3 Prohibited use</h3>
           <div className="rounded-xl border-l-4 border-amber-500 bg-amber-50 px-5 py-4">
-            <strong>È SEVERAMENTE VIETATO:</strong>
+            <strong>STRICTLY FORBIDDEN:</strong>
             <ul className="mt-3 list-disc space-y-2 pl-6">
-              <li>Utilizzare l&apos;app per scopi commerciali senza autorizzazione</li>
-              <li>Vendere, rivendere o monetizzare le storie generate</li>
-              <li>Copiare, modificare o distribuire il software dell&apos;app</li>
-              <li>Tentare di reverse engineering del codice</li>
-              <li>Utilizzare bot o sistemi automatizzati</li>
-              <li>Creare contenuti inappropriati, offensivi o illegali</li>
-              <li>Violare i diritti di proprietà intellettuale</li>
-              <li>Aggirare le limitazioni tecniche dell&apos;app</li>
+              <li>Commercial use of the stories without written permission</li>
+              <li>Selling, reselling, or monetising generated stories</li>
+              <li>Copying, modifying, or distributing the app software</li>
+              <li>Reverse engineering or attempting to access source code</li>
+              <li>Using bots or automated systems</li>
+              <li>Creating inappropriate, offensive, or illegal content</li>
+              <li>Violating intellectual property rights</li>
+              <li>Circumventing technical or usage limits</li>
             </ul>
           </div>
         </div>
       </section>
 
       <section className="space-y-4">
-        <h2 className="text-2xl font-semibold tracking-tight text-slate-800">4. ABBONAMENTI E PAGAMENTI</h2>
+        <h2 className="text-2xl font-semibold tracking-tight text-slate-800">4. SUBSCRIPTIONS AND PAYMENTS</h2>
 
         <div className="space-y-3">
-          <h3 className="text-xl font-semibold text-slate-700">4.1 Modello freemium</h3>
-          <p>L&apos;applicazione offre:</p>
+          <h3 className="text-xl font-semibold text-slate-700">4.1 Freemium model</h3>
+          <p>The app offers:</p>
           <ul className="list-disc space-y-2 pl-6">
             <li>
-              <strong>Versione gratuita</strong>: 3 storie gratuite
+              <strong>Free tier</strong>: 3 stories with essential features
             </li>
             <li>
-              <strong>Abbonamento Premium</strong>: 20 storie al mese e funzionalità avanzate
+              <strong>Premium subscription</strong>: 20 stories per month plus advanced options
             </li>
           </ul>
         </div>
 
         <div className="space-y-3">
-          <h3 className="text-xl font-semibold text-slate-700">4.2 Prezzi e piani</h3>
+          <h3 className="text-xl font-semibold text-slate-700">4.2 Pricing plans</h3>
           <div className="overflow-x-auto">
             <table className="w-full border-collapse overflow-hidden rounded-xl text-left text-sm shadow-sm">
               <thead className="bg-slate-100 text-slate-700">
                 <tr>
-                  <th className="border border-slate-200 px-4 py-3 font-semibold">Piano</th>
-                  <th className="border border-slate-200 px-4 py-3 font-semibold">Prezzo</th>
-                  <th className="border border-slate-200 px-4 py-3 font-semibold">Durata</th>
-                  <th className="border border-slate-200 px-4 py-3 font-semibold">Caratteristiche</th>
+                  <th className="border border-slate-200 px-4 py-3 font-semibold">Plan</th>
+                  <th className="border border-slate-200 px-4 py-3 font-semibold">Price</th>
+                  <th className="border border-slate-200 px-4 py-3 font-semibold">Duration</th>
+                  <th className="border border-slate-200 px-4 py-3 font-semibold">Features</th>
                 </tr>
               </thead>
               <tbody>
                 <tr className="odd:bg-white even:bg-slate-50">
-                  <td className="border border-slate-200 px-4 py-3">Gratuito</td>
+                  <td className="border border-slate-200 px-4 py-3">Free</td>
                   <td className="border border-slate-200 px-4 py-3">€0</td>
-                  <td className="border border-slate-200 px-4 py-3">Sempre</td>
-                  <td className="border border-slate-200 px-4 py-3">3 storie + funzionalità base</td>
+                  <td className="border border-slate-200 px-4 py-3">Lifetime</td>
+                  <td className="border border-slate-200 px-4 py-3">3 stories + basic functions</td>
                 </tr>
                 <tr className="odd:bg-white even:bg-slate-50">
-                  <td className="border border-slate-200 px-4 py-3">Premium Mensile</td>
-                  <td className="border border-slate-200 px-4 py-3">€2,99/mese</td>
-                  <td className="border border-slate-200 px-4 py-3">30 giorni</td>
-                  <td className="border border-slate-200 px-4 py-3">20 Storie al mese</td>
+                  <td className="border border-slate-200 px-4 py-3">Monthly Premium</td>
+                  <td className="border border-slate-200 px-4 py-3">€2.99/month</td>
+                  <td className="border border-slate-200 px-4 py-3">30 days</td>
+                  <td className="border border-slate-200 px-4 py-3">20 stories per month</td>
                 </tr>
                 <tr className="odd:bg-white even:bg-slate-50">
-                  <td className="border border-slate-200 px-4 py-3">Premium Annuale</td>
-                  <td className="border border-slate-200 px-4 py-3">€19,99/anno</td>
-                  <td className="border border-slate-200 px-4 py-3">365 giorni</td>
-                  <td className="border border-slate-200 px-4 py-3">240 Storie all&apos;anno</td>
+                  <td className="border border-slate-200 px-4 py-3">Annual Premium</td>
+                  <td className="border border-slate-200 px-4 py-3">€19.99/year</td>
+                  <td className="border border-slate-200 px-4 py-3">365 days</td>
+                  <td className="border border-slate-200 px-4 py-3">240 stories per year</td>
                 </tr>
               </tbody>
             </table>
@@ -150,301 +155,298 @@ export default function Page() {
         </div>
 
         <div className="space-y-3">
-          <h3 className="text-xl font-semibold text-slate-700">4.3 Gestione abbonamenti</h3>
+          <h3 className="text-xl font-semibold text-slate-700">4.3 Subscription management</h3>
           <ul className="list-disc space-y-2 pl-6">
             <li>
-              <strong>Rinnovo automatico</strong>: Gli abbonamenti si rinnovano automaticamente
+              <strong>Auto-renewal</strong>: subscriptions renew automatically unless cancelled
             </li>
             <li>
-              <strong>Cancellazione</strong>: Gestisci tramite App Store/Google Play
+              <strong>Cancellation</strong>: manage through Apple App Store / Google Play
             </li>
             <li>
-              <strong>Downgrade</strong>: Le funzionalità premium cessano alla scadenza
+              <strong>Downgrade</strong>: premium features end when the plan expires
             </li>
             <li>
-              <strong>Rimborsi</strong>: Secondo le policy di Apple/Google
+              <strong>Refunds</strong>: handled under Apple/Google policies
             </li>
           </ul>
         </div>
 
         <div className="rounded-xl border-l-4 border-amber-500 bg-amber-50 px-5 py-4">
-          Ci riserviamo il diritto di modificare i prezzi con preavviso di 30 giorni. Le modifiche non influenzeranno gli abbonamenti già attivi fino al rinnovo successivo.
+          We reserve the right to adjust prices with 30 days&apos; notice. Changes will not affect active subscriptions until the next renewal.
         </div>
       </section>
 
       <section className="space-y-4">
-        <h2 className="text-2xl font-semibold tracking-tight text-slate-800">5. CONTENUTI E PROPRIETÀ INTELLETTUALE</h2>
+        <h2 className="text-2xl font-semibold tracking-tight text-slate-800">5. CONTENT AND INTELLECTUAL PROPERTY</h2>
 
         <div className="space-y-3">
-          <h3 className="text-xl font-semibold text-slate-700">5.1 Contenuti generati dall&apos;AI</h3>
-          <p>Le storie generate dall&apos;intelligenza artificiale sono create in base ai tuoi input e parametri. Riconosci che:</p>
+          <h3 className="text-xl font-semibold text-slate-700">5.1 AI-generated content</h3>
+          <p>Stories are generated based on your prompts. You acknowledge that:</p>
           <ul className="list-disc space-y-2 pl-6">
-            <li>I contenuti sono generati algoritmicamente</li>
-            <li>Non garantiamo unicità assoluta dei contenuti</li>
-            <li>L&apos;AI può produrre contenuti simili per richieste simili</li>
-            <li>Tutti i contenuti sono filtrati per appropriatezza</li>
+            <li>Content is created algorithmically</li>
+            <li>We cannot guarantee absolute uniqueness</li>
+            <li>Similar inputs may produce similar outputs</li>
+            <li>All content is filtered to remain appropriate for children</li>
           </ul>
         </div>
 
         <div className="space-y-3">
-          <h3 className="text-xl font-semibold text-slate-700">5.2 Proprietà delle storie create</h3>
+          <h3 className="text-xl font-semibold text-slate-700">5.2 Ownership of your stories</h3>
           <div className="rounded-xl border-l-4 border-emerald-500 bg-emerald-50 px-5 py-4">
-            <strong>TUE STORIE:</strong> Mantieni la proprietà delle storie che crei, inclusi testi, immagini e audio generati per te. Puoi utilizzarle liberamente per uso personale.
+            <strong>YOUR STORIES:</strong> You retain ownership of the stories you create, including text, images, and audio generated for you. You may use them freely for personal purposes.
           </div>
         </div>
 
         <div className="space-y-3">
-          <h3 className="text-xl font-semibold text-slate-700">5.3 Proprietà dell&apos;applicazione</h3>
-          <p>L&apos;applicazione, il suo codice, design, interfaccia e tecnologia rimangono di nostra proprietà esclusiva.</p>
+          <h3 className="text-xl font-semibold text-slate-700">5.3 Ownership of the app</h3>
+          <p>The application, its code, design, interface, and technology remain our exclusive property.</p>
         </div>
 
         <div className="space-y-3">
-          <h3 className="text-xl font-semibold text-slate-700">5.4 Limitazioni d&apos;uso commerciale</h3>
+          <h3 className="text-xl font-semibold text-slate-700">5.4 Commercial use</h3>
           <div className="rounded-xl border-l-4 border-rose-500 bg-rose-50 px-5 py-4">
-            <strong>USO COMMERCIALE:</strong> L&apos;uso commerciale delle storie generate richiede una licenza separata. Contattaci per accordi commerciali.
+            <strong>COMMERCIAL USE:</strong> Any commercial exploitation of generated stories requires a separate licence. Contact us to arrange a commercial agreement.
           </div>
         </div>
       </section>
 
       <section className="space-y-4">
-        <h2 className="text-2xl font-semibold tracking-tight text-slate-800">6. PRIVACY E PROTEZIONE DATI</h2>
+        <h2 className="text-2xl font-semibold tracking-tight text-slate-800">6. PRIVACY AND DATA PROTECTION</h2>
         <p>
-          La raccolta e l&apos;uso dei tuoi dati sono disciplinati dalla nostra <a className="text-blue-600 underline-offset-4 hover:underline" href="/app/storie-narrative/privacy-policy.html">Privacy Policy</a>, che forma parte integrante di questi Termini.
+          Data collection and use are governed by our{' '}
+          <a className="text-blue-600 underline-offset-4 hover:underline" href="/app/storie-narrative/privacy-policy.html">
+            Privacy Policy
+          </a>, which is an integral part of these Terms.
         </p>
         <div className="space-y-2">
-          <h3 className="text-xl font-semibold text-slate-700">6.1 Punti chiave privacy</h3>
+          <h3 className="text-xl font-semibold text-slate-700">6.1 Privacy highlights</h3>
           <ul className="list-disc space-y-2 pl-6">
-            <li>Tutti i dati sono salvati localmente sul tuo dispositivo</li>
-            <li>Non condividiamo dati personali con terzi per marketing</li>
-            <li>Utilizziamo servizi AI esterni solo per generazione contenuti</li>
-            <li>Piena compliance GDPR per protezione minori</li>
+            <li>All data is stored locally on your device</li>
+            <li>No personal data is shared with third parties for marketing</li>
+            <li>External AI services are used solely to generate content</li>
+            <li>Full GDPR compliance with safeguards for minors</li>
           </ul>
         </div>
       </section>
 
       <section className="space-y-4">
-        <h2 className="text-2xl font-semibold tracking-tight text-slate-800">7. SERVIZI DI TERZE PARTI</h2>
+        <h2 className="text-2xl font-semibold tracking-tight text-slate-800">7. THIRD-PARTY SERVICES</h2>
 
         <div className="space-y-3">
-          <h3 className="text-xl font-semibold text-slate-700">7.1 Servizi AI integrati</h3>
-          <p>L&apos;applicazione utilizza servizi esterni per generare contenuti:</p>
+          <h3 className="text-xl font-semibold text-slate-700">7.1 Integrated services</h3>
+          <p>The app relies on external services to deliver functionality:</p>
           <ul className="list-disc space-y-2 pl-6">
             <li>
-              <strong>Google Gemini</strong>: Generazione testi
+              <strong>Google Gemini</strong> – text generation
             </li>
             <li>
-              <strong>Runware API</strong>: Generazione immagini
+              <strong>Runware API</strong> – image generation
             </li>
             <li>
-              <strong>Amazon Polly</strong>: Sintesi vocale
+              <strong>Amazon Polly</strong> – voice synthesis
             </li>
             <li>
-              <strong>RevenueCat</strong>: Gestione abbonamenti
+              <strong>RevenueCat</strong> – subscription management
             </li>
           </ul>
         </div>
 
         <div className="space-y-3">
-          <h3 className="text-xl font-semibold text-slate-700">7.2 Limitazioni di responsabilità</h3>
-          <p>Non siamo responsabili per:</p>
+          <h3 className="text-xl font-semibold text-slate-700">7.2 Service limitations</h3>
+          <p>We are not responsible for:</p>
           <ul className="list-disc space-y-2 pl-6">
-            <li>Interruzioni dei servizi di terze parti</li>
-            <li>Modifiche alle API esterne</li>
-            <li>Qualità dei contenuti generati da servizi esterni</li>
+            <li>Interruptions in third-party services</li>
+            <li>Changes to external APIs</li>
+            <li>Quality of content produced by third parties</li>
           </ul>
         </div>
       </section>
 
       <section className="space-y-4">
-        <h2 className="text-2xl font-semibold tracking-tight text-slate-800">8. DISPONIBILITÀ E SUPPORTO</h2>
+        <h2 className="text-2xl font-semibold tracking-tight text-slate-800">8. AVAILABILITY AND SUPPORT</h2>
 
         <div className="space-y-3">
-          <h3 className="text-xl font-semibold text-slate-700">8.1 Disponibilità del servizio</h3>
-          <p>Ci impegniamo a mantenere l&apos;applicazione disponibile 24/7, ma potrebbero verificarsi:</p>
+          <h3 className="text-xl font-semibold text-slate-700">8.1 Service availability</h3>
+          <p>We strive to keep the app available 24/7, but the following may occur:</p>
           <ul className="list-disc space-y-2 pl-6">
-            <li>Manutenzioni programmate (con preavviso)</li>
-            <li>Interruzioni tecniche impreviste</li>
-            <li>Limitazioni dovute a servizi esterni</li>
+            <li>Scheduled maintenance (with prior notice)</li>
+            <li>Unexpected technical interruptions</li>
+            <li>Limitations caused by external services</li>
           </ul>
         </div>
 
         <div className="space-y-3">
-          <h3 className="text-xl font-semibold text-slate-700">8.2 Supporto tecnico</h3>
+          <h3 className="text-xl font-semibold text-slate-700">8.2 Support channels</h3>
           <ul className="list-disc space-y-2 pl-6">
             <li>
               <strong>Email</strong>: marinopanariello@gmail.com
             </li>
             <li>
-              <strong>Tempo di risposta</strong>: Entro 48 ore lavorative
+              <strong>Response time</strong>: within two business days
             </li>
             <li>
-              <strong>Lingue supportate</strong>: Italiano, Inglese
+              <strong>Supported languages</strong>: Italian, English
             </li>
           </ul>
         </div>
       </section>
 
       <section className="space-y-4">
-        <h2 className="text-2xl font-semibold tracking-tight text-slate-800">9. LIMITAZIONI DI RESPONSABILITÀ</h2>
+        <h2 className="text-2xl font-semibold tracking-tight text-slate-800">9. LIABILITY LIMITS</h2>
 
         <div className="rounded-xl border-l-4 border-rose-500 bg-rose-50 px-5 py-4 space-y-2">
-          <h3 className="text-xl font-semibold text-slate-700">9.1 Esclusioni di garanzia</h3>
-          <p>L&apos;applicazione è fornita &quot;così com&apos;è&quot; senza garanzie di alcun tipo. Non garantiamo:</p>
+          <h3 className="text-xl font-semibold text-slate-700">9.1 Warranty disclaimer</h3>
+          <p>The app is provided “as is” without any warranties. We do not guarantee:</p>
           <ul className="list-disc space-y-2 pl-6">
-            <li>Funzionamento ininterrotto o privo di errori</li>
-            <li>Accuratezza completa dei contenuti generati dall&apos;AI</li>
-            <li>Compatibilità con tutti i dispositivi</li>
-            <li>Disponibilità perpetua del servizio</li>
+            <li>Uninterrupted or error-free operation</li>
+            <li>Complete accuracy of AI-generated content</li>
+            <li>Compatibility with every device</li>
+            <li>Continuous availability of the service</li>
           </ul>
         </div>
 
         <div className="space-y-3">
-          <h3 className="text-xl font-semibold text-slate-700">9.2 Limitazione responsabilità</h3>
-          <p>La nostra responsabilità è limitata all&apos;importo pagato per l&apos;abbonamento negli ultimi 12 mesi. Non siamo responsabili per danni indiretti, consequenziali o punitivi.</p>
+          <h3 className="text-xl font-semibold text-slate-700">9.2 Liability cap</h3>
+          <p>Our liability is limited to the subscription fees paid in the last 12 months. We are not liable for indirect, consequential, or punitive damages.</p>
         </div>
       </section>
 
       <section className="space-y-4">
-        <h2 className="text-2xl font-semibold tracking-tight text-slate-800">10. RISOLUZIONE CONTROVERSIE</h2>
+        <h2 className="text-2xl font-semibold tracking-tight text-slate-800">10. GOVERNING LAW AND DISPUTES</h2>
         <div className="space-y-3">
-          <h3 className="text-xl font-semibold text-slate-700">10.1 Legge applicabile</h3>
-          <p>Questi Termini sono regolati dalla legge italiana. Per controversie si applicano le normative EU e italiane sulla protezione dei consumatori.</p>
+          <h3 className="text-xl font-semibold text-slate-700">10.1 Applicable law</h3>
+          <p>These Terms are governed by Italian law.</p>
         </div>
         <div className="space-y-3">
-          <h3 className="text-xl font-semibold text-slate-700">10.2 Foro competente</h3>
-          <p>Per controversie con consumatori, è competente il tribunale del luogo di residenza del consumatore. Per controversie commerciali, il tribunale di Torre Annunziata.</p>
-        </div>
-        <div className="space-y-3">
-          <h3 className="text-xl font-semibold text-slate-700">10.3 Risoluzione alternativa</h3>
-          <p>Prima di procedere legalmente, incoraggiamo la risoluzione amichevole delle controversie tramite:</p>
-          <ul className="list-disc space-y-2 pl-6">
-            <li>Contatto diretto con il nostro supporto</li>
-            <li>Mediazione volontaria</li>
-            <li>Piattaforma ODR europea (per controversie online)</li>
-          </ul>
+          <h3 className="text-xl font-semibold text-slate-700">10.2 Jurisdiction</h3>
+          <p>
+            For consumer disputes, the competent court is the user&apos;s place of residence. For commercial disputes, jurisdiction lies with the Court of Torre Annunziata.
+          </p>
         </div>
       </section>
 
       <section className="space-y-4">
-        <h2 className="text-2xl font-semibold tracking-tight text-slate-800">11. MODIFICHE AI TERMINI</h2>
+        <h2 className="text-2xl font-semibold tracking-tight text-slate-800">11. CHANGES TO THE TERMS</h2>
         <div className="space-y-3">
-          <h3 className="text-xl font-semibold text-slate-700">11.1 Aggiornamenti</h3>
-          <p>Potremmo aggiornare questi Termini per:</p>
+          <h3 className="text-xl font-semibold text-slate-700">11.1 Updates</h3>
+          <p>We may update these Terms to:</p>
           <ul className="list-disc space-y-2 pl-6">
-            <li>Conformità a nuove leggi</li>
-            <li>Miglioramenti del servizio</li>
-            <li>Chiarimenti interpretativi</li>
+            <li>Comply with new legislation</li>
+            <li>Improve or expand the service</li>
+            <li>Clarify existing provisions</li>
           </ul>
         </div>
         <div className="space-y-3">
-          <h3 className="text-xl font-semibold text-slate-700">11.2 Notifica modifiche</h3>
-          <p>Ti informeremo di modifiche significative tramite:</p>
+          <h3 className="text-xl font-semibold text-slate-700">11.2 Notifications</h3>
+          <p>We will notify you of significant changes via:</p>
           <ul className="list-disc space-y-2 pl-6">
-            <li>Notifica nell&apos;app (30 giorni prima)</li>
-            <li>Email (se fornita)</li>
-            <li>Aggiornamento su questa pagina</li>
+            <li>In-app notice (30 days in advance)</li>
+            <li>Email (if provided)</li>
+            <li>Update on this page</li>
           </ul>
         </div>
         <div className="rounded-xl border-l-4 border-amber-500 bg-amber-50 px-5 py-4">
-          Continuando a utilizzare l&apos;app dopo le modifiche, accetti automaticamente i nuovi termini. Se non accetti, puoi interrompere l&apos;uso e cancellare l&apos;abbonamento.
+          Continued use after changes means you accept the revised Terms. If you do not agree, stop using the app and cancel your subscription.
         </div>
       </section>
 
       <section className="space-y-4">
-        <h2 className="text-2xl font-semibold tracking-tight text-slate-800">12. RISOLUZIONE E CESSAZIONE</h2>
+        <h2 className="text-2xl font-semibold tracking-tight text-slate-800">12. TERMINATION</h2>
         <div className="space-y-3">
-          <h3 className="text-xl font-semibold text-slate-700">12.1 Risoluzione da parte tua</h3>
-          <p>Puoi cessare l&apos;uso in qualsiasi momento:</p>
+          <h3 className="text-xl font-semibold text-slate-700">12.1 Termination by you</h3>
+          <p>You may stop using the app at any time by:</p>
           <ul className="list-disc space-y-2 pl-6">
-            <li>Disinstallando l&apos;applicazione</li>
-            <li>Cancellando l&apos;abbonamento tramite store</li>
-            <li>Richiedendo la cancellazione dati</li>
+            <li>Uninstalling the application</li>
+            <li>Cancelling your subscription via the store</li>
+            <li>Requesting data deletion</li>
           </ul>
         </div>
         <div className="space-y-3">
-          <h3 className="text-xl font-semibold text-slate-700">12.2 Risoluzione da parte nostra</h3>
-          <p>Possiamo sospendere o terminare l&apos;accesso in caso di:</p>
+          <h3 className="text-xl font-semibold text-slate-700">12.2 Termination by us</h3>
+          <p>We may suspend or terminate access if:</p>
           <ul className="list-disc space-y-2 pl-6">
-            <li>Violazione di questi Termini</li>
-            <li>Uso improprio dell&apos;applicazione</li>
-            <li>Attività fraudolente o illegali</li>
-            <li>Richieste delle autorità competenti</li>
+            <li>You breach these Terms</li>
+            <li>You misuse the application</li>
+            <li>Fraudulent or illegal activity occurs</li>
+            <li>Authorities issue a lawful request</li>
           </ul>
         </div>
         <div className="space-y-3">
-          <h3 className="text-xl font-semibold text-slate-700">12.3 Effetti della cessazione</h3>
+          <h3 className="text-xl font-semibold text-slate-700">12.3 Effects of termination</h3>
           <ul className="list-disc space-y-2 pl-6">
-            <li>Cessazione immediata dell&apos;accesso alle funzionalità premium</li>
-            <li>Conservazione dei dati locali (se non eliminati dall&apos;utente)</li>
-            <li>Nessun rimborso per periodi non utilizzati (salvo diritto di recesso)</li>
+            <li>Immediate loss of access to premium features</li>
+            <li>Local data remains on the device unless removed</li>
+            <li>No refunds for unused periods (except statutory withdrawal rights)</li>
           </ul>
         </div>
       </section>
 
       <section className="space-y-4">
-        <h2 className="text-2xl font-semibold tracking-tight text-slate-800">13. DIRITTO DI RECESSO (CONSUMATORI EU)</h2>
+        <h2 className="text-2xl font-semibold tracking-tight text-slate-800">13. EU RIGHT OF WITHDRAWAL</h2>
         <div className="space-y-3">
-          <h3 className="text-xl font-semibold text-slate-700">13.1 Periodo di recesso</h3>
+          <h3 className="text-xl font-semibold text-slate-700">13.1 Cooling-off period</h3>
           <div className="rounded-xl border-l-4 border-emerald-500 bg-emerald-50 px-5 py-4">
-            Come consumatore EU, hai diritto di recedere dall&apos;abbonamento entro 14 giorni dall&apos;acquisto senza specificare motivi.
+            EU consumers may withdraw from the subscription within 14 days of purchase without providing a reason.
           </div>
         </div>
         <div className="space-y-3">
-          <h3 className="text-xl font-semibold text-slate-700">13.2 Come esercitare il recesso</h3>
-          <p>Per esercitare il diritto di recesso:</p>
+          <h3 className="text-xl font-semibold text-slate-700">13.2 Exercising the right</h3>
+          <p>To exercise the right of withdrawal:</p>
           <ol className="list-decimal space-y-2 pl-6">
-            <li>Invia richiesta a marinopanariello@gmail.com</li>
-            <li>Indica chiaramente la volontà di recedere</li>
-            <li>Fornisci dettagli dell&apos;abbonamento</li>
+            <li>Email <a className="text-blue-600 underline-offset-4 hover:underline" href="mailto:marinopanariello@gmail.com">marinopanariello@gmail.com</a></li>
+            <li>Clearly state your intention to withdraw</li>
+            <li>Provide subscription details (plan, purchase date)</li>
           </ol>
         </div>
         <div className="space-y-3">
-          <h3 className="text-xl font-semibold text-slate-700">13.3 Rimborso</h3>
-          <p>In caso di recesso valido, rimborseremo l&apos;intero importo entro 14 giorni tramite lo stesso metodo di pagamento utilizzato.</p>
+          <h3 className="text-xl font-semibold text-slate-700">13.3 Refund</h3>
+          <p>If the withdrawal is valid, we will refund the full amount within 14 days using the original payment method.</p>
         </div>
       </section>
 
       <section className="space-y-4">
-        <h2 className="text-2xl font-semibold tracking-tight text-slate-800">14. CONTATTI</h2>
+        <h2 className="text-2xl font-semibold tracking-tight text-slate-800">14. CONTACTS</h2>
         <div className="rounded-xl border border-slate-200 bg-slate-50 px-5 py-4 space-y-2">
-          <p className="font-semibold">Per questioni sui Termini e Condizioni:</p>
-          <p>Email: <a className="text-blue-600 underline-offset-4 hover:underline" href="mailto:marinopanariello@gmail.com">marinopanariello@gmail.com</a></p>
-          <p>Oggetto: &quot;Termini e Condizioni - Fiabe Magiche&quot;</p>
-          <p className="font-semibold">Per supporto tecnico:</p>
-          <p>Email: marinopanariello@gmail.com</p>
-          <p className="font-semibold">Per questioni legali:</p>
-          <p>Email: marinopanariello@gmail.com</p>
-          <p className="font-semibold">Indirizzo postale:</p>
-          <p>Via Alcide de Gasperi 49, Torre del Greco (NA)</p>
+          <p className="font-semibold">Questions about these Terms?</p>
+          <p>
+            Email:{' '}
+            <a className="text-blue-600 underline-offset-4 hover:underline" href="mailto:marinopanariello@gmail.com">
+              marinopanariello@gmail.com
+            </a>
+          </p>
+          <p>Subject: “Terms of Service – Fiabe Magiche”</p>
+          <p className="font-semibold">Postal address:</p>
+          <p>Via Alcide De Gasperi 49, Torre del Greco (NA), Italy</p>
         </div>
       </section>
 
       <section className="space-y-4">
-        <h2 className="text-2xl font-semibold tracking-tight text-slate-800">15. DISPOSIZIONI FINALI</h2>
+        <h2 className="text-2xl font-semibold tracking-tight text-slate-800">15. FINAL PROVISIONS</h2>
         <div className="space-y-3">
-          <h3 className="text-xl font-semibold text-slate-700">15.1 Separabilità</h3>
-          <p>Se una clausola di questi Termini è dichiarata invalida, le restanti clausole rimangono pienamente efficaci.</p>
+          <h3 className="text-xl font-semibold text-slate-700">15.1 Severability</h3>
+          <p>If any clause is deemed invalid, the remaining provisions remain in full force.</p>
         </div>
         <div className="space-y-3">
-          <h3 className="text-xl font-semibold text-slate-700">15.2 Rinuncia</h3>
-          <p>La mancata applicazione di una clausola non costituisce rinuncia ai nostri diritti.</p>
+          <h3 className="text-xl font-semibold text-slate-700">15.2 No waiver</h3>
+          <p>Failure to enforce any clause does not constitute a waiver of our rights.</p>
         </div>
         <div className="space-y-3">
-          <h3 className="text-xl font-semibold text-slate-700">15.3 Accordo completo</h3>
-          <p>Questi Termini, insieme alla Privacy Policy, costituiscono l&apos;accordo completo tra le parti.</p>
+          <h3 className="text-xl font-semibold text-slate-700">15.3 Entire agreement</h3>
+          <p>These Terms, together with the Privacy Policy, constitute the entire agreement between the parties.</p>
         </div>
         <div className="space-y-3">
-          <h3 className="text-xl font-semibold text-slate-700">15.4 Lingue</h3>
-          <p>In caso di conflitto tra versioni linguistiche, prevale la versione italiana.</p>
+          <h3 className="text-xl font-semibold text-slate-700">15.4 Language</h3>
+          <p>In case of conflict between language versions, the English version prevails.</p>
         </div>
       </section>
 
       <footer className="border-t border-slate-200 pt-6 text-sm text-slate-500 space-y-2">
-        <p>© 2025 Fiabe Magiche. Tutti i diritti riservati.</p>
+        <p>© 2025 Fiabe Magiche. All rights reserved.</p>
         <p>
-          <strong>Documento legalmente vincolante</strong> - Versione 1.0
+          <strong>Legally binding document</strong> – Version 1.0
         </p>
-        <p>Conformità: GDPR, Codice del Consumo Italiano, Direttive EU Commerce</p>
+        <p>Compliance: GDPR, Italian Consumer Code, EU eCommerce Directives</p>
       </footer>
     </LegalLayout>
   )

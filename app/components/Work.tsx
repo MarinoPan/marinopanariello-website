@@ -5,11 +5,11 @@ import { SectionHeader } from "./SectionHeader";
 const projects = [
   {
     project: "Docsity",
-    year: "lug 2022 - oggi",
-    results: "+137% visualizzazioni documento; +56% nuovi upload; +43% ricavi ricorrenti",
-    roles: "Product Designer · Roma, Italia",
+    year: "Jul 2022 – Present",
+    results: "+137% document views; +56% new uploads; +43% recurring revenue",
+    roles: "Product Designer · Rome, Italy",
     about:
-      "Ho ridisegnato dashboard, homepage, flusso di upload e landing Docsity AI, creando un modello di documentazione condiviso e sviluppando le pagine chiave direttamente in Next.js con il design system.",
+      "I redesigned the dashboard, homepage, upload flow, and Docsity AI landing, introducing a shared documentation model and shipping key pages directly in Next.js with the design system.",
     images: [
       "/images/projects/docsity-1-after.jpg",
       "/images/projects/docsity-2-after.jpg",
@@ -18,11 +18,11 @@ const projects = [
   },
   {
     project: "Lasting Dynamics",
-    year: "feb 2018 - lug 2022",
-    results: "-30% cycle time; +25% efficienza team; +1k store generati",
-    roles: "UI/UX Designer · Napoli (IT) & LPA (ES)",
+    year: "Feb 2018 – Jul 2022",
+    results: "-30% cycle time; +25% team efficiency; 1k+ stores launched",
+    roles: "UI/UX Designer · Naples (IT) & LPA (ES)",
     about:
-      "Ho guidato progetti web e mobile end-to-end, dalla ricerca ai test, su workflow management, e-commerce builder, piattaforme neuroscience e CRM dedicati.",
+      "I led end-to-end web and mobile projects, from research to testing, across workflow management, e-commerce builders, neuroscience platforms, and tailored CRMs.",
     images: [
       "/images/projects/coraly-01.jpg",
       "/images/projects/coraly-02.jpg",
@@ -30,25 +30,12 @@ const projects = [
     ],
   },
   {
-    project: "Freelancer",
-    year: "2016 - oggi",
-    results: "40+ siti, e-commerce e app gestionali consegnati",
-    roles: "Design Engineer",
-    about:
-      "Supporto startup e PMI nella definizione di brand, UX e sviluppo front-end con Next.js, CMS headless e design system leggeri, seguendo il prodotto dalla strategia al lancio.",
-    images: [
-      "/images/projects/fabloo.png",
-      "/images/projects/vetrinalive-02.jpg",
-      "/images/projects/f1livestats.png",
-    ],
-  },
-  {
     project: "VetrinaLive",
     year: "2020-2022",
-    results: "Design system completo, gestione store end-to-end",
+    results: "Full design system and end-to-end store management",
     roles: "UI/UX Designer",
     about:
-      "E-commerce builder senza commissioni con dashboard KPI, gestione catalogo e personalizzazione guidata.",
+      "Commission-free e-commerce builder with KPI dashboards, catalog management, and guided personalization.",
     images: [
       "/images/projects/vetrinalive-01.jpg",
       "/images/projects/vetrinalive-02.jpg",
@@ -60,7 +47,13 @@ const projects = [
 export const Work = () => {
   return (
     <section className="prose h-full">
-      <SectionHeader kicker="Selected" title="Work" subtitle={undefined} align="left" variant="underline" />
+      <SectionHeader
+        kicker="Selected"
+        title="Work"
+        subtitle={undefined}
+        align="left"
+        variant="underline"
+      />
       <div className="mt-10 space-y-28">
         {projects.map((p, index) => (
           <SingleWork
@@ -75,10 +68,22 @@ export const Work = () => {
         ))}
       </div>
       <div className="mt-12">
-        <a href="/works" className="inline-flex items-center gap-2 text-primary hover:underline underline-offset-4">
+        <a
+          href="/works"
+          className="inline-flex items-center gap-2 text-primary hover:underline underline-offset-4"
+        >
           View more
-          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M2.07102 11.3494L0.963068 10.2415L9.2017 1.98864H2.83807L2.85227 0.454545H11.8438V9.46023H10.2955L10.3097 3.09659L2.07102 11.3494Z" fill="currentColor" />
+          <svg
+            width="12"
+            height="12"
+            viewBox="0 0 12 12"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M2.07102 11.3494L0.963068 10.2415L9.2017 1.98864H2.83807L2.85227 0.454545H11.8438V9.46023H10.2955L10.3097 3.09659L2.07102 11.3494Z"
+              fill="currentColor"
+            />
           </svg>
         </a>
       </div>
