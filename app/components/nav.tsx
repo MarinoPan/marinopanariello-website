@@ -7,6 +7,11 @@ const navItems = [
   { href: "/", name: "home", external: false },
   { href: "/works", name: "works", external: false },
   { href: "/about", name: "about", external: false },
+  {
+    href: "/images/Marino%20CV%202025.pdf",
+    name: "cv",
+    external: true,
+  },
   { href: "https://github.com/MarinoPan", name: "github", external: true },
 ];
 

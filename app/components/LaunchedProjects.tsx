@@ -70,7 +70,7 @@ export const LaunchedProjects = () => {
         viewport={{ once: true, amount: 0.2 }}
         className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10"
       >
-        {projects.map((p) => (
+        {projects.map((p, index) => (
           <motion.article
             key={p.slug}
             variants={item}
@@ -83,7 +83,7 @@ export const LaunchedProjects = () => {
                 fill
                 className="object-cover transition-transform duration-500 ease-out group-hover:scale-[1.03]"
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                priority={false}
+                priority={index === 0}
               />
               {p.status === "coming_soon" && (
                 <div className="absolute left-3 top-3 inline-flex items-center gap-2 bg-background/90 shadow-sm px-2 py-0.5 text-xs font-medium text-primary/70">

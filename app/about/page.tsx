@@ -146,8 +146,8 @@ export default function AboutPage() {
           </div>
           <div className="col-span-12 flex flex-col gap-4 lg:col-span-4">
             <a
-              href="mailto:hello@marinopanariello.com"
-              className="inline-flex items-center justify-center rounded-full bg-primary px-6 py-3 text-sm font-semibold uppercase tracking-[0.2em] text-white transition hover:bg-primary/90"
+              href="mailto:marinopanariello@gmail.com"
+              className="inline-flex items-center justify-center rounded-full bg-primary px-6 py-3 text-sm font-semibold uppercase tracking-[0.2em] text-white transition hover:bg-primary/90 dark:bg-white dark:text-gray-900 dark:hover:bg-white/90"
             >
               Email me
             </a>

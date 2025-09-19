@@ -17,14 +17,34 @@ export const metadata: Metadata = {
   },
   description:
     "I’m Marino Panariello, a product designer based in Italy. I create user-centered designs that solve real problems.",
+  alternates: {
+    canonical: "/",
+  },
+  keywords: [
+    "Product Designer",
+    "Design Engineer",
+    "Design Systems",
+    "UX Engineering",
+    "Marino Panariello",
+  ],
+  authors: [{ name: "Marino Panariello" }],
+  creator: "Marino Panariello",
   openGraph: {
     title: "Marino Panariello | Product Designer",
     description:
       "I’m Marino Panariello, a product designer based in Italy. I create user-centered designs that solve real problems.",
     url: baseUrl,
-    siteName: "My Portfolio",
+    siteName: "Marino Panariello Portfolio",
     locale: "en_US",
     type: "website",
+    images: [
+      {
+        url: "/og?title=Marino%20Panariello%20Portfolio",
+        width: 1200,
+        height: 630,
+        alt: "Open Graph preview of Marino Panariello portfolio",
+      },
+    ],
   },
   robots: {
     index: true,
@@ -36,6 +56,18 @@ export const metadata: Metadata = {
       "max-image-preview": "large",
       "max-snippet": -1,
     },
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Marino Panariello | Product Designer",
+    description:
+      "I’m Marino Panariello, a product designer based in Italy. I create user-centered designs that solve real problems.",
+    images: [
+      {
+        url: "/og?title=Marino%20Panariello%20Portfolio",
+        alt: "Twitter card preview of Marino Panariello portfolio",
+      },
+    ],
   },
 };
 

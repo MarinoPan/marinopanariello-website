@@ -29,6 +29,9 @@ export const SingleWork = ({
   const safeImages = images.slice(0, 3);
   const [open, setOpen] = useState(false);
   const [startIndex, setStartIndex] = useState(0);
+  const mobileBaseHeight = 280;
+  const mobileStackOffset = 60;
+  const mobileHeight = mobileBaseHeight + Math.max(0, safeImages.length - 1) * mobileStackOffset;
 
   type LayoutSlot = {
     top: string;
@@ -151,12 +154,21 @@ export const SingleWork = ({
         </div>
       </div>
       <div className="col-span-12 lg:col-span-8">
-        <div className="grid gap-4 sm:gap-6 md:hidden">
+        <div
+          className="relative md:hidden"
+          style={{ height: `${mobileHeight}px` }}
+        >
           {safeImages.map((src, i) => (
             <button
               key={`${src}-${i}`}
               type="button"
-              className="relative aspect-[4/3] overflow-hidden border border-primary/10 bg-white shadow-sm transition hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/60"
+              className="group absolute inset-x-4 aspect-[4/3] overflow-hidden border border-primary/10 bg-white shadow-md transition duration-500 hover:-translate-y-1 hover:shadow-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/60"
+              style={{
+                top: `${i * 32}px`,
+                left: `${i * 6}px`,
+                right: `${i * 6}px`,
+                zIndex: safeImages.length - i,
+              }}
               onClick={() => {
                 setStartIndex(i);
                 setOpen(true);
@@ -166,8 +178,9 @@ export const SingleWork = ({
                 src={src}
                 alt={`${project} shot ${i + 1}`}
                 fill
-                className="object-cover"
-                sizes="(max-width: 768px) 100vw"
+                className="object-cover transition duration-500 group-hover:scale-[1.03]"
+                sizes="(max-width: 768px) 90vw"
+                priority={i === 0}
               />
             </button>
           ))}
@@ -211,6 +224,7 @@ export const SingleWork = ({
                   fill
                   className="object-cover transition duration-500 group-hover:scale-[1.03]"
                   sizes="(max-width: 1200px) 40vw, 28vw"
+                  priority={i === 0}
                 />
               </motion.button>
             );
