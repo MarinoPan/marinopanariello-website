@@ -45,7 +45,7 @@ export const Hero = () => {
           className="grid grid-cols-12"
         >
           <h3 className="text-4xl md:text-6xl py-4 col-span-9">
-            Hi, I'm a design engineer who merges code and design to simplify
+            Hi, I&apos;m a design engineer who merges code and design to simplify
             digital life.
           </h3>
         </motion.div>
