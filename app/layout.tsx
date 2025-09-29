@@ -54,6 +54,7 @@ export const metadata: Metadata = {
       },
     ],
   },
+  themeColor: "#111111",
   robots: {
     index: true,
     follow: true,
@@ -89,7 +90,7 @@ export default function RootLayout({
       <Analytics />
       <body className={`antialised bg-background  ${satoshi.className}`}>
         <main id="content" className="flex-auto min-w-0 flex flex-col px-6">
-          <div className="fixed w-full opacity-5 h-screen bg-[url(/images/noise.jpg)] bg-repeat -z-1 left-0"></div>
+          <div className="pointer-events-none fixed inset-0 opacity-5 bg-[url(/images/noise.jpg)] bg-repeat -z-10"></div>
           <Blob />
           <BackgroundLines />
           <Navbar />
