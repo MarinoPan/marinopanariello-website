@@ -86,6 +86,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${satoshi.variable}`}>
+      <Analytics />
       <body className={`antialised bg-background  ${satoshi.className}`}>
         <main id="content" className="flex-auto min-w-0 flex flex-col px-6">
           <div className="fixed w-full opacity-5 h-screen bg-[url(/images/noise.jpg)] bg-repeat -z-1 left-0"></div>
