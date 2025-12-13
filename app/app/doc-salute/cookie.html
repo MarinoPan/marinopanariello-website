@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cookie Policy - DocSalute</title>
+    <title>Cookie Policy - Helsa</title>
     <style>
       * {
         margin: 0;
@@ -38,6 +38,12 @@
         margin-top: 20px;
         margin-bottom: 10px;
         font-size: 1.1rem;
+      }
+      h4 {
+        color: #7c3aed;
+        margin-top: 15px;
+        margin-bottom: 8px;
+        font-size: 1rem;
       }
       p {
         margin-bottom: 15px;
@@ -131,14 +137,13 @@
   </head>
   <body>
     <h1>Cookie Policy</h1>
-    <p class="last-update">Ultimo aggiornamento: 3 dicembre 2024</p>
+    <p class="last-update">Ultimo aggiornamento: 13 Dicembre 2024 | Versione: 1.1</p>
 
     <div class="highlight">
-      <strong>Informativa sintetica:</strong> DocSalute utilizza cookie e
+      <strong>Informativa sintetica:</strong> Helsa utilizza cookie e
       tecnologie similari esclusivamente per finalità tecniche essenziali al
       funzionamento dell'applicazione. Non utilizziamo cookie per profilazione
-      pubblicitaria. Per l'analisi del servizio, utilizziamo strumenti che
-      rispettano la privacy degli utenti.
+      pubblicitaria. Per l'analisi del servizio, utilizziamo PostHog con server EU nel rispetto della privacy degli utenti.
     </div>
 
     <h2>1. Cosa sono i Cookie</h2>
@@ -149,7 +154,7 @@
       navigazione.
     </p>
     <p>
-      Nel contesto di un'applicazione mobile come DocSalute, utilizziamo anche
+      Nel contesto di un'applicazione mobile come Helsa, utilizziamo anche
       tecnologie equivalenti come:
     </p>
     <ul>
@@ -194,7 +199,7 @@
 
     <div class="cookie-category">
       <h3>
-        Cookie Tecnici Essenziali
+        3.1 Cookie Tecnici Essenziali
         <span class="badge badge-required">Necessari</span>
       </h3>
       <p>
@@ -223,26 +228,32 @@
         </tr>
         <tr>
           <td>auth_session</td>
-          <td>DocSalute</td>
+          <td>Helsa</td>
           <td>Stato della sessione locale</td>
           <td>Sessione</td>
         </tr>
         <tr>
           <td>biometric_enabled</td>
-          <td>DocSalute</td>
+          <td>Helsa</td>
           <td>Preferenza autenticazione biometrica</td>
           <td>Persistente</td>
         </tr>
         <tr>
           <td>onboarding_completed</td>
-          <td>DocSalute</td>
+          <td>Helsa</td>
           <td>Stato completamento tutorial iniziale</td>
           <td>Persistente</td>
         </tr>
         <tr>
           <td>theme_preference</td>
-          <td>DocSalute</td>
+          <td>Helsa</td>
           <td>Preferenza tema chiaro/scuro</td>
+          <td>Persistente</td>
+        </tr>
+        <tr>
+          <td>language_preference</td>
+          <td>Helsa</td>
+          <td>Lingua dell'interfaccia</td>
           <td>Persistente</td>
         </tr>
       </table>
@@ -250,11 +261,11 @@
 
     <div class="cookie-category">
       <h3>
-        Storage Locale Database
+        3.2 Storage Locale Database
         <span class="badge badge-required">Necessario</span>
       </h3>
       <p>
-        DocSalute utilizza un database SQLite locale per permettere l'utilizzo
+        Helsa utilizza un database SQLite locale per permettere l'utilizzo
         offline dell'applicazione.
       </p>
 
@@ -265,7 +276,7 @@
           <th>Dati Memorizzati</th>
         </tr>
         <tr>
-          <td>docsalute.db</td>
+          <td>helsa.db</td>
           <td>Database locale principale</td>
           <td>Documenti, appuntamenti, farmaci, categorie, profili</td>
         </tr>
@@ -279,7 +290,7 @@
 
     <div class="cookie-category">
       <h3>
-        Cookie di Autenticazione Social
+        3.3 Cookie di Autenticazione Social
         <span class="badge badge-optional">Su Richiesta</span>
       </h3>
       <p>
@@ -316,12 +327,11 @@
 
     <div class="cookie-category">
       <h3>
-        Cookie Analitici e di Monitoraggio
-        <span class="badge badge-analytics">Analitici</span>
+        3.4 Cookie Analitici
+        <span class="badge badge-analytics">Analytics</span>
       </h3>
       <p>
-        Utilizziamo strumenti per monitorare errori e crash dell'applicazione,
-        al fine di migliorare la stabilità del servizio.
+        Utilizziamo strumenti per comprendere come viene utilizzata l'applicazione e migliorare la stabilità del servizio.
       </p>
 
       <table>
@@ -329,12 +339,25 @@
           <th>Servizio</th>
           <th>Finalità</th>
           <th>Dati Raccolti</th>
+          <th>Server</th>
           <th>Privacy Policy</th>
         </tr>
         <tr>
-          <td>Sentry</td>
+          <td><strong>PostHog</strong></td>
+          <td>Product analytics</td>
+          <td>Eventi di utilizzo, info dispositivo, ID anonimo</td>
+          <td><strong>EU</strong> (eu.i.posthog.com)</td>
+          <td>
+            <a href="https://posthog.com/privacy" target="_blank"
+              >PostHog Privacy</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td><strong>Sentry</strong></td>
           <td>Crash reporting e error tracking</td>
-          <td>Stack trace errori, device info, breadcrumbs navigazione</td>
+          <td>Stack trace errori, device info, breadcrumbs</td>
+          <td>EU</td>
           <td>
             <a href="https://sentry.io/privacy/" target="_blank"
               >Sentry Privacy</a
@@ -345,22 +368,45 @@
           <td>Expo Analytics</td>
           <td>Metriche di utilizzo app</td>
           <td>Aperture app, versione, piattaforma</td>
+          <td>USA</td>
           <td>
             <a href="https://expo.dev/privacy" target="_blank">Expo Privacy</a>
           </td>
         </tr>
       </table>
 
-      <p style="margin-top: 15px">
-        <strong>Nota:</strong> I dati di crash reporting sono anonimizzati e
-        utilizzati esclusivamente per migliorare la stabilità dell'applicazione.
-        Non vengono utilizzati per profilazione.
-      </p>
+      <h4>Dettagli su PostHog</h4>
+      <p>PostHog è il nostro strumento principale di product analytics. Ecco come lo utilizziamo:</p>
+
+      <p><strong>Cosa raccogliamo:</strong></p>
+      <ul>
+        <li>Eventi del ciclo di vita dell'app (apertura, chiusura, background)</li>
+        <li>Azioni nell'app (navigazione tra schermate, utilizzo funzionalità)</li>
+        <li>Informazioni sul dispositivo (tipo, OS, versione app)</li>
+        <li>Identificatore utente anonimizzato</li>
+      </ul>
+
+      <p><strong>Cosa NON raccogliamo:</strong></p>
+      <ul>
+        <li>Contenuto dei documenti sanitari</li>
+        <li>Dati personali identificativi</li>
+        <li>Informazioni sui farmaci o appuntamenti</li>
+        <li>Nessun dato sensibile</li>
+      </ul>
+
+      <p><strong>Garanzie GDPR:</strong></p>
+      <ul>
+        <li>Server EU: tutti i dati sono elaborati e conservati nell'Unione Europea (eu.i.posthog.com)</li>
+        <li>Anonimizzazione: gli identificatori utente sono pseudonimizzati</li>
+        <li>Nessuna profilazione pubblicitaria</li>
+        <li>Conservazione limitata: 2 anni</li>
+        <li>Puoi richiedere la cancellazione dei tuoi dati analytics contattandoci</li>
+      </ul>
     </div>
 
     <div class="cookie-category">
       <h3>
-        Cookie per Servizi di Pagamento
+        3.5 Cookie per Servizi di Pagamento
         <span class="badge badge-optional">Su Acquisto</span>
       </h3>
       <p>Attivati solo se decidi di sottoscrivere un abbonamento Pro.</p>
@@ -404,7 +450,7 @@
     <h2>4. Cookie di Terze Parti</h2>
     <p>
       I servizi di terze parti integrati nell'applicazione possono impostare
-      propri cookie. DocSalute non ha controllo diretto su questi cookie. Di
+      propri cookie. Helsa non ha controllo diretto su questi cookie. Di
       seguito l'elenco dei servizi utilizzati:
     </p>
 
@@ -420,6 +466,12 @@
         <td>Backend & Database</td>
         <td>UE (Francoforte)</td>
         <td>No</td>
+      </tr>
+      <tr>
+        <td><strong>PostHog</strong></td>
+        <td><strong>Product Analytics</strong></td>
+        <td><strong>UE</strong></td>
+        <td><strong>No</strong></td>
       </tr>
       <tr>
         <td>Sentry</td>
@@ -462,41 +514,21 @@
       </li>
     </ul>
 
-    <h2>5. Sviluppi Futuri: Analytics</h2>
-    <div class="highlight">
-      <p>
-        <strong>Informativa preventiva:</strong> In futuro potremmo integrare
-        servizi di analytics per comprendere meglio come viene utilizzata
-        l'applicazione. Eventuali implementazioni saranno:
-      </p>
-      <ul>
-        <li>Comunicate con aggiornamento di questa policy</li>
-        <li>Configurate con IP anonimizzato</li>
-        <li>Senza profilazione per finalità pubblicitarie</li>
-        <li>Conformi al GDPR e alle linee guida del Garante</li>
-      </ul>
-      <p>
-        Potremmo utilizzare servizi come: Google Analytics 4 (con IP
-        anonimizzato), Mixpanel, Amplitude, PostHog, o soluzioni privacy-first
-        come Plausible o Fathom.
-      </p>
-    </div>
-
-    <h2>6. Come Gestiamo i Cookie nell'App Mobile</h2>
+    <h2>5. Come Gestiamo i Cookie nell'App Mobile</h2>
     <p>
-      Essendo DocSalute un'applicazione mobile nativa, la gestione dei cookie e
+      Essendo Helsa un'applicazione mobile nativa, la gestione dei cookie e
       dello storage locale avviene in modo diverso rispetto ai siti web
       tradizionali:
     </p>
 
-    <h3>6.1 Storage Locale</h3>
+    <h3>5.1 Storage Locale</h3>
     <ul>
       <li>I dati locali sono memorizzati nella sandbox dell'applicazione</li>
       <li>Non sono accessibili da altre applicazioni</li>
       <li>Vengono eliminati con la disinstallazione dell'app</li>
     </ul>
 
-    <h3>6.2 Secure Storage</h3>
+    <h3>5.2 Secure Storage</h3>
     <ul>
       <li>
         Token di autenticazione e dati sensibili sono memorizzati in modo sicuro
@@ -505,7 +537,7 @@
       <li>Su Android: Encrypted Shared Preferences</li>
     </ul>
 
-    <h3>6.3 Eliminazione Dati</h3>
+    <h3>5.3 Eliminazione Dati</h3>
     <p>Per eliminare tutti i dati locali puoi:</p>
     <ol>
       <li>Usare la funzione "Elimina account" nelle impostazioni dell'app</li>
@@ -515,9 +547,16 @@
       </li>
     </ol>
 
-    <h2>7. Come Gestire i Cookie sul Web</h2>
+    <h3>5.4 Opt-out Analytics</h3>
+    <p>Se desideri disabilitare la raccolta dati analytics:</p>
+    <ol>
+      <li><strong>Contattaci</strong> a privacy@helsa.app per richiedere l'esclusione</li>
+      <li><strong>Elimina l'account</strong> per rimuovere tutti i dati associati</li>
+    </ol>
+
+    <h2>6. Come Gestire i Cookie sul Web</h2>
     <p>
-      Se accedi a DocSalute tramite browser web, puoi gestire i cookie
+      Se accedi a Helsa tramite browser web, puoi gestire i cookie
       attraverso le impostazioni del tuo browser:
     </p>
     <ul>
@@ -539,7 +578,7 @@
       compromettere il funzionamento dell'applicazione.
     </p>
 
-    <h2>8. I Tuoi Diritti</h2>
+    <h2>7. I Tuoi Diritti</h2>
     <p>
       In relazione ai cookie e alle tecnologie di tracciamento, hai diritto a:
     </p>
@@ -549,15 +588,14 @@
         policy)
       </li>
       <li>
-        <strong>Rifiutare</strong> i cookie non essenziali (non ne utilizziamo)
+        <strong>Rifiutare</strong> i cookie non essenziali (attualmente non ne utilizziamo)
       </li>
       <li>
         <strong>Revocare</strong> il consenso in qualsiasi momento (per cookie
         opzionali)
       </li>
       <li>
-        <strong>Richiedere la cancellazione</strong> dei dati raccolti tramite
-        cookie
+        <strong>Richiedere la cancellazione</strong> dei dati raccolti tramite analytics
       </li>
       <li>
         <strong>Opporti</strong> al trattamento per finalità di marketing (non
@@ -565,14 +603,14 @@
       </li>
     </ul>
 
-    <h2>9. Minori</h2>
+    <h2>8. Minori</h2>
     <p>
-      DocSalute non utilizza cookie per profilazione e non raccoglie dati per
+      Helsa non utilizza cookie per profilazione e non raccoglie dati per
       finalità di marketing. I cookie tecnici necessari al funzionamento del
       servizio sono gli stessi per tutti gli utenti, indipendentemente dall'età.
     </p>
 
-    <h2>10. Aggiornamenti della Policy</h2>
+    <h2>9. Aggiornamenti della Policy</h2>
     <p>
       Questa Cookie Policy può essere aggiornata periodicamente. Ti informeremo
       di eventuali modifiche significative tramite:
@@ -590,21 +628,20 @@
       informato.
     </p>
 
-    <h2>11. Contatti</h2>
+    <h2>10. Contatti</h2>
     <p>
       Per qualsiasi domanda relativa a questa Cookie Policy o al trattamento dei
       tuoi dati:
     </p>
     <ul>
-      <li><strong>Email:</strong> privacy@docsalute.app</li>
-      <li><strong>Titolare:</strong> [Nome Cognome / Ragione Sociale]</li>
-      <li><strong>Indirizzo:</strong> [Indirizzo completo], Italia</li>
+      <li><strong>Email:</strong> marinopanariello@gmail.com</li>
+      <li><strong>Titolare:</strong> Marino Panariello</li>
     </ul>
 
-    <h2>12. Link Utili</h2>
+    <h2>11. Link Utili</h2>
     <ul>
-      <li><a href="privacy-policy.html">Privacy Policy completa</a></li>
-      <li><a href="terms-of-service.html">Termini di Servizio</a></li>
+      <li><a href="privacy.html">Privacy Policy</a></li>
+      <li><a href="terms.html">Termini di Servizio</a></li>
       <li>
         <a href="https://www.garanteprivacy.it/cookie" target="_blank"
           >Garante Privacy - Cookie</a
@@ -618,11 +655,11 @@
     </ul>
 
     <footer>
-      <p>&copy; 2024 DocSalute. Tutti i diritti riservati.</p>
+      <p>&copy; 2024 Helsa. Tutti i diritti riservati.</p>
       <p>
-        <a href="privacy-policy.html">Privacy Policy</a> |
-        <a href="terms-of-service.html">Termini di Servizio</a> |
-        <a href="cookie-policy.html">Cookie Policy</a>
+        <a href="privacy.html">Privacy Policy</a> |
+        <a href="terms.html">Termini di Servizio</a> |
+        <a href="cookie.html">Cookie Policy</a>
       </p>
     </footer>
   </body>

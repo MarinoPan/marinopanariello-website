@@ -1,8 +1,8 @@
 import { LegalLayout } from '../../../components/LegalLayout'
 
 export const metadata = {
-  title: 'Privacy Policy - DocSalute',
-  description: 'Informativa sulla privacy per l\'app DocSalute con dettagli sulla raccolta dati, utilizzo e diritti GDPR.',
+  title: 'Privacy Policy - Helsa',
+  description: 'Informativa sulla privacy per l\'app Helsa con dettagli sulla raccolta dati, utilizzo e diritti GDPR.',
 }
 
 export default function Page() {
@@ -11,14 +11,14 @@ export default function Page() {
       <header className="space-y-2 border-b border-slate-200 pb-6">
         <h1 className="text-3xl font-semibold tracking-tight">Informativa sulla Privacy</h1>
         <p>
-          <strong>DocSalute</strong>
+          <strong>Helsa</strong>
           <br />
-          <em>Ultimo aggiornamento: 3 Dicembre 2024 | Versione 1.0</em>
+          <em>Ultimo aggiornamento: 13 Dicembre 2024 | Versione 1.1</em>
         </p>
       </header>
 
       <section className="rounded-xl border-l-4 border-violet-500 bg-violet-50 px-5 py-4">
-        <strong>Sintesi:</strong> DocSalute raccoglie i tuoi dati sanitari per permetterti di archiviarli e gestirli. I dati sono criptati, sincronizzati in modo sicuro sui nostri server e <strong>non vengono mai venduti a terzi</strong>. Utilizziamo servizi di terze parti per autenticazione, storage, pagamenti e monitoraggio errori.
+        <strong>Sintesi:</strong> Helsa raccoglie i tuoi dati sanitari per permetterti di archiviarli e gestirli. I dati sono criptati, sincronizzati in modo sicuro sui nostri server e <strong>non vengono mai venduti a terzi</strong>. Utilizziamo servizi di terze parti per autenticazione, storage, pagamenti e monitoraggio errori.
       </section>
 
       <section className="space-y-4">
@@ -174,7 +174,7 @@ export default function Page() {
 
         <div className="space-y-3">
           <h3 className="text-xl font-semibold text-slate-700">2.4 Dati di Pagamento</h3>
-          <p>DocSalute <strong>non memorizza</strong> direttamente dati di carte di credito o metodi di pagamento. I pagamenti sono gestiti da:</p>
+          <p>Helsa <strong>non memorizza</strong> direttamente dati di carte di credito o metodi di pagamento. I pagamenti sono gestiti da:</p>
           <ul className="list-disc space-y-2 pl-6">
             <li><strong>Apple App Store</strong> - per utenti iOS</li>
             <li><strong>Google Play Store</strong> - per utenti Android</li>
@@ -273,7 +273,47 @@ export default function Page() {
         </div>
 
         <div className="space-y-3">
-          <h3 className="text-xl font-semibold text-slate-700">4.2 Sentry (Functional Software Inc.)</h3>
+          <h3 className="text-xl font-semibold text-slate-700">4.2 PostHog Inc.</h3>
+          <div className="overflow-x-auto">
+            <table className="w-full border-collapse overflow-hidden rounded-xl text-left text-sm shadow-sm">
+              <tbody>
+                <tr className="odd:bg-white even:bg-slate-50">
+                  <th className="border border-slate-200 bg-violet-50 px-4 py-3 font-semibold text-slate-700">Ruolo</th>
+                  <td className="border border-slate-200 px-4 py-3">Product analytics e analisi comportamento utente</td>
+                </tr>
+                <tr className="odd:bg-white even:bg-slate-50">
+                  <th className="border border-slate-200 bg-violet-50 px-4 py-3 font-semibold text-slate-700">Dati trattati</th>
+                  <td className="border border-slate-200 px-4 py-3">Eventi di utilizzo app, ID utente anonimizzato, info dispositivo, azioni nell&apos;app</td>
+                </tr>
+                <tr className="odd:bg-white even:bg-slate-50">
+                  <th className="border border-slate-200 bg-violet-50 px-4 py-3 font-semibold text-slate-700">Sede</th>
+                  <td className="border border-slate-200 px-4 py-3">USA con <strong>server EU</strong> (eu.i.posthog.com)</td>
+                </tr>
+                <tr className="odd:bg-white even:bg-slate-50">
+                  <th className="border border-slate-200 bg-violet-50 px-4 py-3 font-semibold text-slate-700">Garanzie</th>
+                  <td className="border border-slate-200 px-4 py-3">SOC 2 Type II, GDPR compliant, Data Processing Addendum</td>
+                </tr>
+                <tr className="odd:bg-white even:bg-slate-50">
+                  <th className="border border-slate-200 bg-violet-50 px-4 py-3 font-semibold text-slate-700">Privacy Policy</th>
+                  <td className="border border-slate-200 px-4 py-3">
+                    <a className="text-blue-600 underline-offset-4 hover:underline" href="https://posthog.com/privacy" target="_blank" rel="noopener noreferrer">posthog.com/privacy</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p className="mt-3"><strong>Dettagli sull&apos;utilizzo di PostHog:</strong></p>
+          <ul className="list-disc space-y-2 pl-6">
+            <li>Utilizziamo server EU per garantire che i dati restino nell&apos;Unione Europea</li>
+            <li>Raccogliamo eventi del ciclo di vita dell&apos;app (apertura, chiusura, background)</li>
+            <li>Gli eventi vengono aggregati e anonimizzati</li>
+            <li>Non raccogliamo contenuti di documenti o dati sanitari tramite analytics</li>
+            <li>Puoi richiedere la cancellazione dei tuoi dati analytics contattandoci</li>
+          </ul>
+        </div>
+
+        <div className="space-y-3">
+          <h3 className="text-xl font-semibold text-slate-700">4.3 Sentry (Functional Software Inc.)</h3>
           <div className="overflow-x-auto">
             <table className="w-full border-collapse overflow-hidden rounded-xl text-left text-sm shadow-sm">
               <tbody>
@@ -305,7 +345,7 @@ export default function Page() {
         </div>
 
         <div className="space-y-3">
-          <h3 className="text-xl font-semibold text-slate-700">4.3 RevenueCat Inc.</h3>
+          <h3 className="text-xl font-semibold text-slate-700">4.4 RevenueCat Inc.</h3>
           <div className="overflow-x-auto">
             <table className="w-full border-collapse overflow-hidden rounded-xl text-left text-sm shadow-sm">
               <tbody>
@@ -337,7 +377,7 @@ export default function Page() {
         </div>
 
         <div className="space-y-3">
-          <h3 className="text-xl font-semibold text-slate-700">4.4 Apple Inc. / Google LLC</h3>
+          <h3 className="text-xl font-semibold text-slate-700">4.5 Apple Inc. / Google LLC</h3>
           <div className="overflow-x-auto">
             <table className="w-full border-collapse overflow-hidden rounded-xl text-left text-sm shadow-sm">
               <tbody>
@@ -361,7 +401,7 @@ export default function Page() {
         </div>
 
         <div className="space-y-3">
-          <h3 className="text-xl font-semibold text-slate-700">4.5 Expo / React Native (Meta)</h3>
+          <h3 className="text-xl font-semibold text-slate-700">4.6 Expo / React Native (Meta)</h3>
           <div className="overflow-x-auto">
             <table className="w-full border-collapse overflow-hidden rounded-xl text-left text-sm shadow-sm">
               <tbody>
@@ -427,6 +467,11 @@ export default function Page() {
                 <td className="border border-slate-200 px-4 py-3">Log tecnici</td>
                 <td className="border border-slate-200 px-4 py-3">90 giorni</td>
                 <td className="border border-slate-200 px-4 py-3">N/A (anonimizzati)</td>
+              </tr>
+              <tr className="odd:bg-white even:bg-slate-50">
+                <td className="border border-slate-200 px-4 py-3">Dati analytics (PostHog)</td>
+                <td className="border border-slate-200 px-4 py-3">2 anni</td>
+                <td className="border border-slate-200 px-4 py-3">Anonimizzati/cancellati su richiesta</td>
               </tr>
               <tr className="odd:bg-white even:bg-slate-50">
                 <td className="border border-slate-200 px-4 py-3">Dati di fatturazione</td>
@@ -550,7 +595,7 @@ export default function Page() {
 
       <section className="space-y-4">
         <h2 className="text-2xl font-semibold tracking-tight text-slate-800">10. Minori</h2>
-        <p>DocSalute non è destinato a minori di 16 anni. Non raccogliamo consapevolmente dati di minori di 16 anni senza il consenso verificabile di un genitore o tutore.</p>
+        <p>Helsa non è destinato a minori di 16 anni. Non raccogliamo consapevolmente dati di minori di 16 anni senza il consenso verificabile di un genitore o tutore.</p>
         <p>Se sei un genitore e ritieni che tuo figlio abbia fornito dati personali, contattaci immediatamente per la rimozione.</p>
       </section>
 
@@ -561,6 +606,7 @@ export default function Page() {
           <li><strong>SecureStore:</strong> Per memorizzare token di autenticazione in modo sicuro sul dispositivo</li>
           <li><strong>AsyncStorage:</strong> Per preferenze utente e cache locale</li>
           <li><strong>SQLite:</strong> Per archiviazione offline dei documenti</li>
+          <li><strong>PostHog SDK:</strong> Per analytics di prodotto (con server EU)</li>
         </ul>
         <p>Per maggiori dettagli, consulta la nostra <a className="text-blue-600 underline-offset-4 hover:underline" href="/app/doc-salute/cookie-policy">Cookie Policy</a>.</p>
       </section>
@@ -615,7 +661,7 @@ export default function Page() {
       </section>
 
       <footer className="border-t border-slate-200 pt-6 text-sm text-slate-500">
-        <p>© 2024 DocSalute. Tutti i diritti riservati.</p>
+        <p>© 2024 Helsa. Tutti i diritti riservati.</p>
         <p>Questa informativa è stata redatta in conformità al Regolamento UE 2016/679 (GDPR).</p>
       </footer>
     </LegalLayout>

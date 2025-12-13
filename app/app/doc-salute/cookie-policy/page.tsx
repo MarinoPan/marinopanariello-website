@@ -1,8 +1,8 @@
 import { LegalLayout } from '../../../components/LegalLayout'
 
 export const metadata = {
-  title: 'Cookie Policy - DocSalute',
-  description: 'Cookie policy per l\'app DocSalute con dettagli sui cookie tecnici, storage locale e servizi di terze parti.',
+  title: 'Cookie Policy - Helsa',
+  description: 'Cookie policy per l\'app Helsa con dettagli sui cookie tecnici, storage locale e servizi di terze parti.',
 }
 
 export default function Page() {
@@ -11,20 +11,20 @@ export default function Page() {
       <header className="space-y-2 border-b border-slate-200 pb-6">
         <h1 className="text-3xl font-semibold tracking-tight">Cookie Policy</h1>
         <p>
-          <strong>DocSalute</strong>
+          <strong>Helsa</strong>
           <br />
-          <em>Ultimo aggiornamento: 3 Dicembre 2024</em>
+          <em>Ultimo aggiornamento: 13 Dicembre 2024 | Versione 1.1</em>
         </p>
       </header>
 
       <section className="rounded-xl border-l-4 border-violet-500 bg-violet-50 px-5 py-4">
-        <strong>Informativa sintetica:</strong> DocSalute utilizza cookie e tecnologie similari esclusivamente per finalità tecniche essenziali al funzionamento dell&apos;applicazione. Non utilizziamo cookie per profilazione pubblicitaria. Per l&apos;analisi del servizio, utilizziamo strumenti che rispettano la privacy degli utenti.
+        <strong>Informativa sintetica:</strong> Helsa utilizza cookie e tecnologie similari esclusivamente per finalità tecniche essenziali al funzionamento dell&apos;applicazione. Non utilizziamo cookie per profilazione pubblicitaria. Per l&apos;analisi del servizio, utilizziamo strumenti che rispettano la privacy degli utenti.
       </section>
 
       <section className="space-y-4">
         <h2 className="text-2xl font-semibold tracking-tight text-slate-800">1. Cosa sono i Cookie</h2>
         <p>I cookie sono piccoli file di testo che vengono memorizzati sul tuo dispositivo quando visiti un sito web o utilizzi un&apos;applicazione. Servono a memorizzare informazioni utili per migliorare l&apos;esperienza di navigazione.</p>
-        <p>Nel contesto di un&apos;applicazione mobile come DocSalute, utilizziamo anche tecnologie equivalenti come:</p>
+        <p>Nel contesto di un&apos;applicazione mobile come Helsa, utilizziamo anche tecnologie equivalenti come:</p>
         <ul className="list-disc space-y-2 pl-6">
           <li><strong>Local Storage:</strong> memorizzazione locale nel browser o nell&apos;app</li>
           <li><strong>SQLite Database:</strong> database locale per dati offline</li>
@@ -78,25 +78,25 @@ export default function Page() {
                   </tr>
                   <tr className="odd:bg-white even:bg-slate-50">
                     <td className="border border-slate-200 px-4 py-3">auth_session</td>
-                    <td className="border border-slate-200 px-4 py-3">DocSalute</td>
+                    <td className="border border-slate-200 px-4 py-3">Helsa</td>
                     <td className="border border-slate-200 px-4 py-3">Stato della sessione locale</td>
                     <td className="border border-slate-200 px-4 py-3">Sessione</td>
                   </tr>
                   <tr className="odd:bg-white even:bg-slate-50">
                     <td className="border border-slate-200 px-4 py-3">biometric_enabled</td>
-                    <td className="border border-slate-200 px-4 py-3">DocSalute</td>
+                    <td className="border border-slate-200 px-4 py-3">Helsa</td>
                     <td className="border border-slate-200 px-4 py-3">Preferenza autenticazione biometrica</td>
                     <td className="border border-slate-200 px-4 py-3">Persistente</td>
                   </tr>
                   <tr className="odd:bg-white even:bg-slate-50">
                     <td className="border border-slate-200 px-4 py-3">onboarding_completed</td>
-                    <td className="border border-slate-200 px-4 py-3">DocSalute</td>
+                    <td className="border border-slate-200 px-4 py-3">Helsa</td>
                     <td className="border border-slate-200 px-4 py-3">Stato completamento tutorial iniziale</td>
                     <td className="border border-slate-200 px-4 py-3">Persistente</td>
                   </tr>
                   <tr className="odd:bg-white even:bg-slate-50">
                     <td className="border border-slate-200 px-4 py-3">theme_preference</td>
-                    <td className="border border-slate-200 px-4 py-3">DocSalute</td>
+                    <td className="border border-slate-200 px-4 py-3">Helsa</td>
                     <td className="border border-slate-200 px-4 py-3">Preferenza tema chiaro/scuro</td>
                     <td className="border border-slate-200 px-4 py-3">Persistente</td>
                   </tr>
@@ -110,7 +110,7 @@ export default function Page() {
               Storage Locale Database
               <span className="rounded bg-red-100 px-2 py-1 text-xs font-medium text-red-800">Necessario</span>
             </h3>
-            <p className="mt-2">DocSalute utilizza un database SQLite locale per permettere l&apos;utilizzo offline dell&apos;applicazione.</p>
+            <p className="mt-2">Helsa utilizza un database SQLite locale per permettere l&apos;utilizzo offline dell&apos;applicazione.</p>
             <div className="overflow-x-auto mt-4">
               <table className="w-full border-collapse overflow-hidden rounded-xl text-left text-sm shadow-sm">
                 <thead className="bg-violet-100 text-slate-700">
@@ -122,7 +122,7 @@ export default function Page() {
                 </thead>
                 <tbody>
                   <tr className="odd:bg-white even:bg-slate-50">
-                    <td className="border border-slate-200 px-4 py-3">docsalute.db</td>
+                    <td className="border border-slate-200 px-4 py-3">helsa.db</td>
                     <td className="border border-slate-200 px-4 py-3">Database locale principale</td>
                     <td className="border border-slate-200 px-4 py-3">Documenti, appuntamenti, farmaci, categorie, profili</td>
                   </tr>
@@ -176,7 +176,7 @@ export default function Page() {
               Cookie Analitici e di Monitoraggio
               <span className="rounded bg-amber-100 px-2 py-1 text-xs font-medium text-amber-800">Analitici</span>
             </h3>
-            <p className="mt-2">Utilizziamo strumenti per monitorare errori e crash dell&apos;applicazione, al fine di migliorare la stabilità del servizio.</p>
+            <p className="mt-2">Utilizziamo strumenti per comprendere come viene utilizzata l&apos;applicazione e migliorare la stabilità del servizio.</p>
             <div className="overflow-x-auto mt-4">
               <table className="w-full border-collapse overflow-hidden rounded-xl text-left text-sm shadow-sm">
                 <thead className="bg-violet-100 text-slate-700">
@@ -184,14 +184,25 @@ export default function Page() {
                     <th className="border border-slate-200 px-4 py-3 font-semibold">Servizio</th>
                     <th className="border border-slate-200 px-4 py-3 font-semibold">Finalità</th>
                     <th className="border border-slate-200 px-4 py-3 font-semibold">Dati Raccolti</th>
+                    <th className="border border-slate-200 px-4 py-3 font-semibold">Server</th>
                     <th className="border border-slate-200 px-4 py-3 font-semibold">Privacy Policy</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr className="odd:bg-white even:bg-slate-50">
+                    <td className="border border-slate-200 px-4 py-3 font-semibold">PostHog</td>
+                    <td className="border border-slate-200 px-4 py-3">Product analytics</td>
+                    <td className="border border-slate-200 px-4 py-3">Eventi di utilizzo, info dispositivo, ID anonimo</td>
+                    <td className="border border-slate-200 px-4 py-3 font-semibold">EU (eu.i.posthog.com)</td>
+                    <td className="border border-slate-200 px-4 py-3">
+                      <a className="text-blue-600 underline-offset-4 hover:underline" href="https://posthog.com/privacy" target="_blank" rel="noopener noreferrer">PostHog Privacy</a>
+                    </td>
+                  </tr>
+                  <tr className="odd:bg-white even:bg-slate-50">
                     <td className="border border-slate-200 px-4 py-3">Sentry</td>
                     <td className="border border-slate-200 px-4 py-3">Crash reporting e error tracking</td>
-                    <td className="border border-slate-200 px-4 py-3">Stack trace errori, device info, breadcrumbs navigazione</td>
+                    <td className="border border-slate-200 px-4 py-3">Stack trace errori, device info, breadcrumbs</td>
+                    <td className="border border-slate-200 px-4 py-3">EU</td>
                     <td className="border border-slate-200 px-4 py-3">
                       <a className="text-blue-600 underline-offset-4 hover:underline" href="https://sentry.io/privacy/" target="_blank" rel="noopener noreferrer">Sentry Privacy</a>
                     </td>
@@ -200,6 +211,7 @@ export default function Page() {
                     <td className="border border-slate-200 px-4 py-3">Expo Analytics</td>
                     <td className="border border-slate-200 px-4 py-3">Metriche di utilizzo app</td>
                     <td className="border border-slate-200 px-4 py-3">Aperture app, versione, piattaforma</td>
+                    <td className="border border-slate-200 px-4 py-3">USA</td>
                     <td className="border border-slate-200 px-4 py-3">
                       <a className="text-blue-600 underline-offset-4 hover:underline" href="https://expo.dev/privacy" target="_blank" rel="noopener noreferrer">Expo Privacy</a>
                     </td>
@@ -207,7 +219,41 @@ export default function Page() {
                 </tbody>
               </table>
             </div>
-            <p className="mt-4"><strong>Nota:</strong> I dati di crash reporting sono anonimizzati e utilizzati esclusivamente per migliorare la stabilità dell&apos;applicazione. Non vengono utilizzati per profilazione.</p>
+
+            <div className="mt-4 space-y-3">
+              <h4 className="text-lg font-semibold text-slate-700">Dettagli su PostHog</h4>
+              <p>PostHog è il nostro strumento principale di product analytics. Ecco come lo utilizziamo:</p>
+              <div className="grid md:grid-cols-2 gap-4">
+                <div>
+                  <p className="font-semibold text-slate-700">Cosa raccogliamo:</p>
+                  <ul className="list-disc space-y-1 pl-6 text-sm">
+                    <li>Eventi del ciclo di vita dell&apos;app (apertura, chiusura, background)</li>
+                    <li>Azioni nell&apos;app (navigazione tra schermate, utilizzo funzionalità)</li>
+                    <li>Informazioni sul dispositivo (tipo, OS, versione app)</li>
+                    <li>Identificatore utente anonimizzato</li>
+                  </ul>
+                </div>
+                <div>
+                  <p className="font-semibold text-slate-700">Cosa NON raccogliamo:</p>
+                  <ul className="list-disc space-y-1 pl-6 text-sm">
+                    <li>Contenuto dei documenti sanitari</li>
+                    <li>Dati personali identificativi</li>
+                    <li>Informazioni sui farmaci o appuntamenti</li>
+                    <li>Nessun dato sensibile</li>
+                  </ul>
+                </div>
+              </div>
+              <div className="rounded-xl border-l-4 border-green-500 bg-green-50 px-5 py-4 mt-3">
+                <p className="font-semibold">Garanzie GDPR:</p>
+                <ul className="list-disc space-y-1 pl-6 text-sm mt-2">
+                  <li><strong>Server EU:</strong> tutti i dati sono elaborati e conservati nell&apos;Unione Europea (eu.i.posthog.com)</li>
+                  <li><strong>Anonimizzazione:</strong> gli identificatori utente sono pseudonimizzati</li>
+                  <li><strong>Nessuna profilazione pubblicitaria</strong></li>
+                  <li><strong>Conservazione limitata:</strong> 2 anni</li>
+                  <li>Puoi richiedere la cancellazione dei tuoi dati analytics contattandoci</li>
+                </ul>
+              </div>
+            </div>
           </div>
 
           <div className="rounded-xl border border-slate-200 bg-white p-5">
@@ -256,7 +302,7 @@ export default function Page() {
 
       <section className="space-y-4">
         <h2 className="text-2xl font-semibold tracking-tight text-slate-800">4. Cookie di Terze Parti</h2>
-        <p>I servizi di terze parti integrati nell&apos;applicazione possono impostare propri cookie. DocSalute non ha controllo diretto su questi cookie. Di seguito l&apos;elenco dei servizi utilizzati:</p>
+        <p>I servizi di terze parti integrati nell&apos;applicazione possono impostare propri cookie. Helsa non ha controllo diretto su questi cookie. Di seguito l&apos;elenco dei servizi utilizzati:</p>
         <div className="overflow-x-auto">
           <table className="w-full border-collapse overflow-hidden rounded-xl text-left text-sm shadow-sm">
             <thead className="bg-slate-100 text-slate-700">
@@ -273,6 +319,12 @@ export default function Page() {
                 <td className="border border-slate-200 px-4 py-3">Backend & Database</td>
                 <td className="border border-slate-200 px-4 py-3">UE (Francoforte)</td>
                 <td className="border border-slate-200 px-4 py-3">No</td>
+              </tr>
+              <tr className="odd:bg-white even:bg-slate-50">
+                <td className="border border-slate-200 px-4 py-3 font-semibold">PostHog</td>
+                <td className="border border-slate-200 px-4 py-3 font-semibold">Product Analytics</td>
+                <td className="border border-slate-200 px-4 py-3 font-semibold">UE</td>
+                <td className="border border-slate-200 px-4 py-3 font-semibold">No</td>
               </tr>
               <tr className="odd:bg-white even:bg-slate-50">
                 <td className="border border-slate-200 px-4 py-3">Sentry</td>
@@ -315,25 +367,11 @@ export default function Page() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="text-2xl font-semibold tracking-tight text-slate-800">5. Sviluppi Futuri: Analytics</h2>
-        <div className="rounded-xl border-l-4 border-violet-500 bg-violet-50 px-5 py-4">
-          <p><strong>Informativa preventiva:</strong> In futuro potremmo integrare servizi di analytics per comprendere meglio come viene utilizzata l&apos;applicazione. Eventuali implementazioni saranno:</p>
-          <ul className="list-disc space-y-2 pl-6 mt-3">
-            <li>Comunicate con aggiornamento di questa policy</li>
-            <li>Configurate con IP anonimizzato</li>
-            <li>Senza profilazione per finalità pubblicitarie</li>
-            <li>Conformi al GDPR e alle linee guida del Garante</li>
-          </ul>
-          <p className="mt-3">Potremmo utilizzare servizi come: Google Analytics 4 (con IP anonimizzato), Mixpanel, Amplitude, PostHog, o soluzioni privacy-first come Plausible o Fathom.</p>
-        </div>
-      </section>
-
-      <section className="space-y-4">
-        <h2 className="text-2xl font-semibold tracking-tight text-slate-800">6. Come Gestiamo i Cookie nell&apos;App Mobile</h2>
-        <p>Essendo DocSalute un&apos;applicazione mobile nativa, la gestione dei cookie e dello storage locale avviene in modo diverso rispetto ai siti web tradizionali:</p>
+        <h2 className="text-2xl font-semibold tracking-tight text-slate-800">5. Come Gestiamo i Cookie nell&apos;App Mobile</h2>
+        <p>Essendo Helsa un&apos;applicazione mobile nativa, la gestione dei cookie e dello storage locale avviene in modo diverso rispetto ai siti web tradizionali:</p>
 
         <div className="space-y-3">
-          <h3 className="text-xl font-semibold text-slate-700">6.1 Storage Locale</h3>
+          <h3 className="text-xl font-semibold text-slate-700">5.1 Storage Locale</h3>
           <ul className="list-disc space-y-2 pl-6">
             <li>I dati locali sono memorizzati nella sandbox dell&apos;applicazione</li>
             <li>Non sono accessibili da altre applicazioni</li>
@@ -342,7 +380,7 @@ export default function Page() {
         </div>
 
         <div className="space-y-3">
-          <h3 className="text-xl font-semibold text-slate-700">6.2 Secure Storage</h3>
+          <h3 className="text-xl font-semibold text-slate-700">5.2 Secure Storage</h3>
           <ul className="list-disc space-y-2 pl-6">
             <li>Token di autenticazione e dati sensibili sono memorizzati in modo sicuro</li>
             <li>Su iOS: Keychain</li>
@@ -351,7 +389,7 @@ export default function Page() {
         </div>
 
         <div className="space-y-3">
-          <h3 className="text-xl font-semibold text-slate-700">6.3 Eliminazione Dati</h3>
+          <h3 className="text-xl font-semibold text-slate-700">5.3 Eliminazione Dati</h3>
           <p>Per eliminare tutti i dati locali puoi:</p>
           <ol className="list-decimal space-y-2 pl-6">
             <li>Usare la funzione &quot;Elimina account&quot; nelle impostazioni dell&apos;app</li>
@@ -362,8 +400,8 @@ export default function Page() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="text-2xl font-semibold tracking-tight text-slate-800">7. Come Gestire i Cookie sul Web</h2>
-        <p>Se accedi a DocSalute tramite browser web, puoi gestire i cookie attraverso le impostazioni del tuo browser:</p>
+        <h2 className="text-2xl font-semibold tracking-tight text-slate-800">6. Come Gestire i Cookie sul Web</h2>
+        <p>Se accedi a Helsa tramite browser web, puoi gestire i cookie attraverso le impostazioni del tuo browser:</p>
         <ul className="list-disc space-y-2 pl-6">
           <li><strong>Chrome:</strong> Impostazioni → Privacy e sicurezza → Cookie</li>
           <li><strong>Firefox:</strong> Impostazioni → Privacy e sicurezza → Cookie</li>
@@ -376,7 +414,7 @@ export default function Page() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="text-2xl font-semibold tracking-tight text-slate-800">8. I Tuoi Diritti</h2>
+        <h2 className="text-2xl font-semibold tracking-tight text-slate-800">7. I Tuoi Diritti</h2>
         <p>In relazione ai cookie e alle tecnologie di tracciamento, hai diritto a:</p>
         <ul className="list-disc space-y-2 pl-6">
           <li><strong>Essere informato</strong> su quali cookie utilizziamo (questa policy)</li>
@@ -388,12 +426,12 @@ export default function Page() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="text-2xl font-semibold tracking-tight text-slate-800">9. Minori</h2>
-        <p>DocSalute non utilizza cookie per profilazione e non raccoglie dati per finalità di marketing. I cookie tecnici necessari al funzionamento del servizio sono gli stessi per tutti gli utenti, indipendentemente dall&apos;età.</p>
+        <h2 className="text-2xl font-semibold tracking-tight text-slate-800">8. Minori</h2>
+        <p>Helsa non utilizza cookie per profilazione e non raccoglie dati per finalità di marketing. I cookie tecnici necessari al funzionamento del servizio sono gli stessi per tutti gli utenti, indipendentemente dall&apos;età.</p>
       </section>
 
       <section className="space-y-4">
-        <h2 className="text-2xl font-semibold tracking-tight text-slate-800">10. Aggiornamenti della Policy</h2>
+        <h2 className="text-2xl font-semibold tracking-tight text-slate-800">9. Aggiornamenti della Policy</h2>
         <p>Questa Cookie Policy può essere aggiornata periodicamente. Ti informeremo di eventuali modifiche significative tramite:</p>
         <ul className="list-disc space-y-2 pl-6">
           <li>Notifica nell&apos;applicazione</li>
@@ -404,7 +442,7 @@ export default function Page() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="text-2xl font-semibold tracking-tight text-slate-800">11. Contatti</h2>
+        <h2 className="text-2xl font-semibold tracking-tight text-slate-800">10. Contatti</h2>
         <p>Per qualsiasi domanda relativa a questa Cookie Policy o al trattamento dei tuoi dati:</p>
         <div className="rounded-xl border border-slate-200 bg-violet-50 px-5 py-4">
           <p>
@@ -418,7 +456,7 @@ export default function Page() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="text-2xl font-semibold tracking-tight text-slate-800">12. Link Utili</h2>
+        <h2 className="text-2xl font-semibold tracking-tight text-slate-800">11. Link Utili</h2>
         <ul className="list-disc space-y-2 pl-6">
           <li><a className="text-blue-600 underline-offset-4 hover:underline" href="/app/doc-salute/privacy-policy">Privacy Policy completa</a></li>
           <li><a className="text-blue-600 underline-offset-4 hover:underline" href="/app/doc-salute/terms-of-service">Termini di Servizio</a></li>
@@ -428,7 +466,7 @@ export default function Page() {
       </section>
 
       <footer className="border-t border-slate-200 pt-6 text-sm text-slate-500">
-        <p>© 2024 DocSalute. Tutti i diritti riservati.</p>
+        <p>© 2024 Helsa. Tutti i diritti riservati.</p>
         <p>
           <a className="hover:underline" href="/app/doc-salute/privacy-policy">Privacy Policy</a> | <a className="hover:underline" href="/app/doc-salute/terms-of-service">Termini di Servizio</a> | <a className="hover:underline" href="/app/doc-salute/cookie-policy">Cookie Policy</a>
         </p>

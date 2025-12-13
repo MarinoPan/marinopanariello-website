@@ -1,8 +1,8 @@
 import { LegalLayout } from '../../../components/LegalLayout'
 
 export const metadata = {
-  title: 'Termini di Servizio - DocSalute',
-  description: 'Termini e condizioni di servizio per l\'app DocSalute, che copre regole d\'utilizzo, abbonamenti, protezione dati e diritti degli utenti.',
+  title: 'Termini di Servizio - Helsa',
+  description: 'Termini e condizioni di servizio per l\'app Helsa, che copre regole d\'utilizzo, abbonamenti, protezione dati e diritti degli utenti.',
 }
 
 export default function Page() {
@@ -11,31 +11,32 @@ export default function Page() {
       <header className="space-y-2 border-b border-slate-200 pb-6">
         <h1 className="text-3xl font-semibold tracking-tight">Termini e Condizioni di Servizio</h1>
         <p>
-          <strong>DocSalute</strong>
+          <strong>Helsa</strong>
           <br />
-          <em>Ultimo aggiornamento: 3 Dicembre 2024 | Versione 1.0</em>
+          <em>Ultimo aggiornamento: 13 Dicembre 2024 | Versione 1.1</em>
         </p>
       </header>
 
       <section className="rounded-xl border-l-4 border-violet-500 bg-violet-50 px-5 py-4">
-        <strong>Sintesi:</strong> DocSalute ti permette di archiviare e gestire i tuoi documenti sanitari. Usando l&apos;app accetti questi termini. L&apos;app <strong>non fornisce consulenza medica</strong>. Sei responsabile dei contenuti che carichi.
+        <strong>Sintesi:</strong> Helsa ti permette di archiviare e gestire i tuoi documenti sanitari. Usando l&apos;app accetti questi termini. L&apos;app <strong>non fornisce consulenza medica</strong>. Sei responsabile dei contenuti che carichi.
       </section>
 
       <section className="space-y-4">
         <h2 className="text-2xl font-semibold tracking-tight text-slate-800">1. Definizioni</h2>
         <ul className="list-disc space-y-2 pl-6">
-          <li><strong>&quot;Servizio&quot;</strong>: L&apos;applicazione mobile DocSalute e tutte le sue funzionalità</li>
+          <li><strong>&quot;Servizio&quot;</strong>: L&apos;applicazione mobile Helsa e tutte le sue funzionalità</li>
           <li><strong>&quot;Utente&quot; / &quot;Tu&quot;</strong>: Qualsiasi persona che utilizza il Servizio</li>
-          <li><strong>&quot;Titolare&quot; / &quot;Noi&quot;</strong>: Marino Panariello, proprietario e gestore di DocSalute</li>
+          <li><strong>&quot;Titolare&quot; / &quot;Noi&quot;</strong>: Marino Panariello, proprietario e gestore di Helsa</li>
           <li><strong>&quot;Contenuti&quot;</strong>: Documenti, immagini, dati e informazioni caricati dall&apos;Utente</li>
           <li><strong>&quot;Account&quot;</strong>: L&apos;insieme di credenziali e dati associati a un Utente registrato</li>
           <li><strong>&quot;Abbonamento Pro&quot;</strong>: Piano a pagamento con funzionalità aggiuntive</li>
+          <li><strong>&quot;Grace Period&quot;</strong>: Periodo di 90 giorni durante il quale i dati cloud vengono preservati dopo il downgrade</li>
         </ul>
       </section>
 
       <section className="space-y-4">
         <h2 className="text-2xl font-semibold tracking-tight text-slate-800">2. Accettazione dei Termini</h2>
-        <p>Accedendo o utilizzando DocSalute, dichiari di:</p>
+        <p>Accedendo o utilizzando Helsa, dichiari di:</p>
         <ul className="list-disc space-y-2 pl-6">
           <li>Aver letto, compreso e accettato integralmente questi Termini</li>
           <li>Aver letto e accettato la nostra <a className="text-blue-600 underline-offset-4 hover:underline" href="/app/doc-salute/privacy-policy">Privacy Policy</a></li>
@@ -47,7 +48,7 @@ export default function Page() {
 
       <section className="space-y-4">
         <h2 className="text-2xl font-semibold tracking-tight text-slate-800">3. Descrizione del Servizio</h2>
-        <p>DocSalute è un&apos;applicazione mobile che consente di:</p>
+        <p>Helsa è un&apos;applicazione mobile che consente di:</p>
         <ul className="list-disc space-y-2 pl-6">
           <li>Archiviare e organizzare documenti sanitari (referti, prescrizioni, esami)</li>
           <li>Gestire appuntamenti medici con promemoria</li>
@@ -59,7 +60,7 @@ export default function Page() {
 
         <div className="rounded-xl border-l-4 border-red-500 bg-red-50 px-5 py-4">
           <strong>DISCLAIMER MEDICO IMPORTANTE</strong>
-          <p className="mt-2">DocSalute è uno strumento di <strong>organizzazione personale</strong> e <strong>NON</strong>:</p>
+          <p className="mt-2">Helsa è uno strumento di <strong>organizzazione personale</strong> e <strong>NON</strong>:</p>
           <ul className="list-disc space-y-2 pl-6 mt-2">
             <li>Fornisce diagnosi mediche</li>
             <li>Offre consulenza o raccomandazioni mediche</li>
@@ -122,19 +123,31 @@ export default function Page() {
               <tbody>
                 <tr className="odd:bg-white even:bg-slate-50">
                   <td className="border border-slate-200 px-4 py-3">Documenti archiviabili</td>
-                  <td className="border border-slate-200 px-4 py-3">5 documenti</td>
+                  <td className="border border-slate-200 px-4 py-3 font-semibold">10 documenti</td>
+                </tr>
+                <tr className="odd:bg-white even:bg-slate-50">
+                  <td className="border border-slate-200 px-4 py-3">Allegati totali</td>
+                  <td className="border border-slate-200 px-4 py-3 font-semibold">20 allegati</td>
+                </tr>
+                <tr className="odd:bg-white even:bg-slate-50">
+                  <td className="border border-slate-200 px-4 py-3">Storage cloud</td>
+                  <td className="border border-slate-200 px-4 py-3 font-semibold">100 MB</td>
+                </tr>
+                <tr className="odd:bg-white even:bg-slate-50">
+                  <td className="border border-slate-200 px-4 py-3">Dimensione singolo file</td>
+                  <td className="border border-slate-200 px-4 py-3 font-semibold">10 MB</td>
                 </tr>
                 <tr className="odd:bg-white even:bg-slate-50">
                   <td className="border border-slate-200 px-4 py-3">Profili familiari</td>
-                  <td className="border border-slate-200 px-4 py-3">1 profilo</td>
-                </tr>
-                <tr className="odd:bg-white even:bg-slate-50">
-                  <td className="border border-slate-200 px-4 py-3">Funzionalità offline</td>
-                  <td className="border border-slate-200 px-4 py-3">Base</td>
+                  <td className="border border-slate-200 px-4 py-3 font-semibold">1 profilo (solo &quot;Io&quot;)</td>
                 </tr>
                 <tr className="odd:bg-white even:bg-slate-50">
                   <td className="border border-slate-200 px-4 py-3">Sincronizzazione cloud</td>
-                  <td className="border border-slate-200 px-4 py-3">Limitata</td>
+                  <td className="border border-slate-200 px-4 py-3">Inclusa</td>
+                </tr>
+                <tr className="odd:bg-white even:bg-slate-50">
+                  <td className="border border-slate-200 px-4 py-3">Funzionalità offline</td>
+                  <td className="border border-slate-200 px-4 py-3">Completa</td>
                 </tr>
               </tbody>
             </table>
@@ -148,17 +161,29 @@ export default function Page() {
               <thead className="bg-slate-100 text-slate-700">
                 <tr>
                   <th className="border border-slate-200 px-4 py-3 font-semibold">Funzionalità</th>
-                  <th className="border border-slate-200 px-4 py-3 font-semibold">Incluso</th>
+                  <th className="border border-slate-200 px-4 py-3 font-semibold">Limite</th>
                 </tr>
               </thead>
               <tbody>
                 <tr className="odd:bg-white even:bg-slate-50">
                   <td className="border border-slate-200 px-4 py-3">Documenti archiviabili</td>
-                  <td className="border border-slate-200 px-4 py-3">Illimitati</td>
+                  <td className="border border-slate-200 px-4 py-3 font-semibold">200 documenti</td>
+                </tr>
+                <tr className="odd:bg-white even:bg-slate-50">
+                  <td className="border border-slate-200 px-4 py-3">Allegati totali</td>
+                  <td className="border border-slate-200 px-4 py-3 font-semibold">400 allegati</td>
+                </tr>
+                <tr className="odd:bg-white even:bg-slate-50">
+                  <td className="border border-slate-200 px-4 py-3">Storage cloud</td>
+                  <td className="border border-slate-200 px-4 py-3 font-semibold">1 GB (1024 MB)</td>
+                </tr>
+                <tr className="odd:bg-white even:bg-slate-50">
+                  <td className="border border-slate-200 px-4 py-3">Dimensione singolo file</td>
+                  <td className="border border-slate-200 px-4 py-3 font-semibold">15 MB</td>
                 </tr>
                 <tr className="odd:bg-white even:bg-slate-50">
                   <td className="border border-slate-200 px-4 py-3">Profili familiari</td>
-                  <td className="border border-slate-200 px-4 py-3">Illimitati</td>
+                  <td className="border border-slate-200 px-4 py-3 font-semibold">50 profili</td>
                 </tr>
                 <tr className="odd:bg-white even:bg-slate-50">
                   <td className="border border-slate-200 px-4 py-3">Sincronizzazione cloud</td>
@@ -209,7 +234,7 @@ export default function Page() {
             <li>Puoi cancellare in qualsiasi momento dalle impostazioni dello store</li>
             <li>La cancellazione deve avvenire almeno <strong>24 ore prima</strong> del rinnovo</li>
             <li>Dopo la cancellazione, l&apos;accesso Pro rimane attivo fino a fine periodo</li>
-            <li>Al termine, l&apos;account torna al piano Gratuito (i dati vengono conservati)</li>
+            <li>Al termine, l&apos;account passa al piano Gratuito (vedi sezione Grace Period)</li>
           </ul>
         </div>
 
@@ -224,15 +249,141 @@ export default function Page() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="text-2xl font-semibold tracking-tight text-slate-800">6. Contenuti dell&apos;Utente</h2>
+        <h2 className="text-2xl font-semibold tracking-tight text-slate-800">6. Grace Period (Periodo di Grazia)</h2>
 
         <div className="space-y-3">
-          <h3 className="text-xl font-semibold text-slate-700">6.1 Proprietà</h3>
-          <p>Mantieni <strong>tutti i diritti</strong> sui contenuti che carichi su DocSalute. Non rivendichiamo alcuna proprietà intellettuale sui tuoi documenti.</p>
+          <h3 className="text-xl font-semibold text-slate-700">6.1 Cos&apos;è il Grace Period</h3>
+          <p>Quando il tuo abbonamento Pro scade o viene cancellato, hai diritto a un <strong>periodo di grazia di 90 giorni</strong> durante il quale:</p>
+          <ul className="list-disc space-y-2 pl-6">
+            <li>Tutti i tuoi dati cloud vengono <strong>preservati integralmente</strong></li>
+            <li>Puoi continuare ad accedere e visualizzare tutti i documenti</li>
+            <li>Puoi effettuare il downgrade dei dati entro i limiti FREE</li>
+            <li>Puoi riattivare l&apos;abbonamento Pro per mantenere tutto</li>
+          </ul>
         </div>
 
         <div className="space-y-3">
-          <h3 className="text-xl font-semibold text-slate-700">6.2 Licenza Limitata</h3>
+          <h3 className="text-xl font-semibold text-slate-700">6.2 Cosa Succede Durante il Grace Period</h3>
+          <div className="overflow-x-auto">
+            <table className="w-full border-collapse overflow-hidden rounded-xl text-left text-sm shadow-sm">
+              <thead className="bg-slate-100 text-slate-700">
+                <tr>
+                  <th className="border border-slate-200 px-4 py-3 font-semibold">Azione</th>
+                  <th className="border border-slate-200 px-4 py-3 font-semibold">Disponibilità</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="odd:bg-white even:bg-slate-50">
+                  <td className="border border-slate-200 px-4 py-3">Visualizzazione documenti esistenti</td>
+                  <td className="border border-slate-200 px-4 py-3">Completa</td>
+                </tr>
+                <tr className="odd:bg-white even:bg-slate-50">
+                  <td className="border border-slate-200 px-4 py-3">Creazione nuovi documenti</td>
+                  <td className="border border-slate-200 px-4 py-3">Limitata ai limiti FREE</td>
+                </tr>
+                <tr className="odd:bg-white even:bg-slate-50">
+                  <td className="border border-slate-200 px-4 py-3">Upload nuovi allegati</td>
+                  <td className="border border-slate-200 px-4 py-3">Limitato ai limiti FREE</td>
+                </tr>
+                <tr className="odd:bg-white even:bg-slate-50">
+                  <td className="border border-slate-200 px-4 py-3">Sincronizzazione</td>
+                  <td className="border border-slate-200 px-4 py-3">Attiva</td>
+                </tr>
+                <tr className="odd:bg-white even:bg-slate-50">
+                  <td className="border border-slate-200 px-4 py-3">Modifica documenti esistenti</td>
+                  <td className="border border-slate-200 px-4 py-3">Completa</td>
+                </tr>
+                <tr className="odd:bg-white even:bg-slate-50">
+                  <td className="border border-slate-200 px-4 py-3">Accesso offline</td>
+                  <td className="border border-slate-200 px-4 py-3">Completo</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div className="space-y-3">
+          <h3 className="text-xl font-semibold text-slate-700">6.3 Comunicazioni Durante il Grace Period</h3>
+          <p>Ti invieremo email di promemoria ai seguenti intervalli:</p>
+          <ol className="list-decimal space-y-2 pl-6">
+            <li><strong>Immediatamente</strong> - Conferma del downgrade e inizio grace period</li>
+            <li><strong>30 giorni prima</strong> della scadenza - Primo promemoria</li>
+            <li><strong>10 giorni prima</strong> della scadenza - Secondo promemoria (urgente)</li>
+            <li><strong>1 giorno prima</strong> della scadenza - Ultimo avviso</li>
+          </ol>
+        </div>
+
+        <div className="space-y-3">
+          <h3 className="text-xl font-semibold text-slate-700">6.4 Cosa Succede Alla Scadenza del Grace Period</h3>
+          <p>Al termine dei 90 giorni, se non hai riattivato l&apos;abbonamento Pro:</p>
+          <div className="overflow-x-auto">
+            <table className="w-full border-collapse overflow-hidden rounded-xl text-left text-sm shadow-sm">
+              <thead className="bg-slate-100 text-slate-700">
+                <tr>
+                  <th className="border border-slate-200 px-4 py-3 font-semibold">Elemento</th>
+                  <th className="border border-slate-200 px-4 py-3 font-semibold">Azione</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="odd:bg-white even:bg-slate-50">
+                  <td className="border border-slate-200 px-4 py-3 font-semibold">Documenti in eccesso (cloud)</td>
+                  <td className="border border-slate-200 px-4 py-3">Eliminati (oltre i 10 consentiti)</td>
+                </tr>
+                <tr className="odd:bg-white even:bg-slate-50">
+                  <td className="border border-slate-200 px-4 py-3 font-semibold">Allegati in eccesso (cloud)</td>
+                  <td className="border border-slate-200 px-4 py-3">Eliminati (oltre i 20 consentiti)</td>
+                </tr>
+                <tr className="odd:bg-white even:bg-slate-50">
+                  <td className="border border-slate-200 px-4 py-3 font-semibold">Profili familiari extra</td>
+                  <td className="border border-slate-200 px-4 py-3">Disabilitati (solo profilo &quot;Io&quot; attivo)</td>
+                </tr>
+                <tr className="odd:bg-white even:bg-slate-50">
+                  <td className="border border-slate-200 px-4 py-3 font-semibold">Storage in eccesso</td>
+                  <td className="border border-slate-200 px-4 py-3">Liberato</td>
+                </tr>
+                <tr className="odd:bg-white even:bg-slate-50">
+                  <td className="border border-slate-200 px-4 py-3 font-semibold">Dati locali sul dispositivo</td>
+                  <td className="border border-slate-200 px-4 py-3 text-green-700 font-semibold">MAI eliminati</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div className="rounded-xl border-l-4 border-amber-500 bg-amber-50 px-5 py-4">
+            <strong>Importante:</strong> I dati locali memorizzati sul tuo dispositivo <strong>non vengono MAI eliminati</strong>. Solo i dati sincronizzati nel cloud che eccedono i limiti del piano Gratuito saranno rimossi.
+          </div>
+        </div>
+
+        <div className="space-y-3">
+          <h3 className="text-xl font-semibold text-slate-700">6.5 Criteri di Eliminazione</h3>
+          <p>Quando i dati cloud vengono ridotti per rispettare i limiti FREE:</p>
+          <ol className="list-decimal space-y-2 pl-6">
+            <li>Vengono eliminati prima i <strong>documenti più vecchi</strong> (per data di creazione)</li>
+            <li>Gli allegati associati ai documenti eliminati vengono rimossi</li>
+            <li>I documenti più recenti vengono preservati fino al limite consentito</li>
+          </ol>
+        </div>
+
+        <div className="space-y-3">
+          <h3 className="text-xl font-semibold text-slate-700">6.6 Come Evitare la Perdita di Dati</h3>
+          <p>Per evitare la perdita di dati cloud puoi:</p>
+          <ol className="list-decimal space-y-2 pl-6">
+            <li><strong>Riattivare l&apos;abbonamento Pro</strong> prima della scadenza del grace period</li>
+            <li><strong>Esportare i dati</strong> localmente sul dispositivo prima della scadenza</li>
+            <li><strong>Eliminare manualmente</strong> i documenti in eccesso per rientrare nei limiti FREE</li>
+          </ol>
+        </div>
+      </section>
+
+      <section className="space-y-4">
+        <h2 className="text-2xl font-semibold tracking-tight text-slate-800">7. Contenuti dell&apos;Utente</h2>
+
+        <div className="space-y-3">
+          <h3 className="text-xl font-semibold text-slate-700">7.1 Proprietà</h3>
+          <p>Mantieni <strong>tutti i diritti</strong> sui contenuti che carichi su Helsa. Non rivendichiamo alcuna proprietà intellettuale sui tuoi documenti.</p>
+        </div>
+
+        <div className="space-y-3">
+          <h3 className="text-xl font-semibold text-slate-700">7.2 Licenza Limitata</h3>
           <p>Caricando contenuti, ci concedi una licenza limitata, non esclusiva e revocabile per:</p>
           <ul className="list-disc space-y-2 pl-6">
             <li>Archiviare i contenuti sui nostri server</li>
@@ -244,7 +395,7 @@ export default function Page() {
         </div>
 
         <div className="space-y-3">
-          <h3 className="text-xl font-semibold text-slate-700">6.3 Responsabilità sui Contenuti</h3>
+          <h3 className="text-xl font-semibold text-slate-700">7.3 Responsabilità sui Contenuti</h3>
           <p>Sei l&apos;unico responsabile dei contenuti che carichi e garantisci che:</p>
           <ul className="list-disc space-y-2 pl-6">
             <li>Hai il diritto di caricarli (sono tuoi o hai autorizzazione)</li>
@@ -255,7 +406,7 @@ export default function Page() {
         </div>
 
         <div className="space-y-3">
-          <h3 className="text-xl font-semibold text-slate-700">6.4 Backup e Perdita Dati</h3>
+          <h3 className="text-xl font-semibold text-slate-700">7.4 Backup e Perdita Dati</h3>
           <div className="rounded-xl border-l-4 border-amber-500 bg-amber-50 px-5 py-4">
             <strong>Importante:</strong> Sebbene effettuiamo backup regolari, ti consigliamo di mantenere <strong>copie locali</strong> dei documenti più importanti. Non siamo responsabili per eventuali perdite di dati dovute a cause di forza maggiore, errori tecnici o cancellazione accidentale da parte tua.
           </div>
@@ -263,11 +414,11 @@ export default function Page() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="text-2xl font-semibold tracking-tight text-slate-800">7. Uso Accettabile</h2>
+        <h2 className="text-2xl font-semibold tracking-tight text-slate-800">8. Uso Accettabile</h2>
 
         <div className="space-y-3">
-          <h3 className="text-xl font-semibold text-slate-700">7.1 Usi Consentiti</h3>
-          <p>Puoi utilizzare DocSalute per:</p>
+          <h3 className="text-xl font-semibold text-slate-700">8.1 Usi Consentiti</h3>
+          <p>Puoi utilizzare Helsa per:</p>
           <ul className="list-disc space-y-2 pl-6">
             <li>Archiviare i tuoi documenti sanitari personali</li>
             <li>Gestire documenti di familiari con il loro consenso</li>
@@ -277,7 +428,7 @@ export default function Page() {
         </div>
 
         <div className="space-y-3">
-          <h3 className="text-xl font-semibold text-slate-700">7.2 Usi Vietati</h3>
+          <h3 className="text-xl font-semibold text-slate-700">8.2 Usi Vietati</h3>
           <p>È severamente vietato:</p>
           <ul className="list-disc space-y-2 pl-6">
             <li>Caricare contenuti illegali, offensivi o che violano diritti di terzi</li>
@@ -294,11 +445,11 @@ export default function Page() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="text-2xl font-semibold tracking-tight text-slate-800">8. Proprietà Intellettuale</h2>
+        <h2 className="text-2xl font-semibold tracking-tight text-slate-800">9. Proprietà Intellettuale</h2>
 
         <div className="space-y-3">
-          <h3 className="text-xl font-semibold text-slate-700">8.1 Diritti del Titolare</h3>
-          <p>DocSalute, inclusi:</p>
+          <h3 className="text-xl font-semibold text-slate-700">9.1 Diritti del Titolare</h3>
+          <p>Helsa, inclusi:</p>
           <ul className="list-disc space-y-2 pl-6">
             <li>Nome, logo e marchi</li>
             <li>Design, interfaccia grafica e UX</li>
@@ -309,7 +460,7 @@ export default function Page() {
         </div>
 
         <div className="space-y-3">
-          <h3 className="text-xl font-semibold text-slate-700">8.2 Licenza d&apos;Uso</h3>
+          <h3 className="text-xl font-semibold text-slate-700">9.2 Licenza d&apos;Uso</h3>
           <p>Ti concediamo una licenza:</p>
           <ul className="list-disc space-y-2 pl-6">
             <li>Limitata, non esclusiva e non trasferibile</li>
@@ -320,7 +471,7 @@ export default function Page() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="text-2xl font-semibold tracking-tight text-slate-800">9. Privacy e Protezione Dati</h2>
+        <h2 className="text-2xl font-semibold tracking-tight text-slate-800">10. Privacy e Protezione Dati</h2>
         <p>Il trattamento dei tuoi dati personali è regolato dalla nostra <a className="text-blue-600 underline-offset-4 hover:underline" href="/app/doc-salute/privacy-policy">Privacy Policy</a>, che costituisce parte integrante di questi Termini.</p>
         <p>In particolare:</p>
         <ul className="list-disc space-y-2 pl-6">
@@ -328,18 +479,19 @@ export default function Page() {
           <li>Utilizziamo crittografia per proteggere i tuoi dati</li>
           <li>Puoi richiedere cancellazione, export e accesso ai tuoi dati</li>
           <li>Non vendiamo i tuoi dati a terzi</li>
+          <li>Utilizziamo analytics (PostHog) per migliorare il servizio</li>
         </ul>
       </section>
 
       <section className="space-y-4">
-        <h2 className="text-2xl font-semibold tracking-tight text-slate-800">10. Limitazione di Responsabilità</h2>
+        <h2 className="text-2xl font-semibold tracking-tight text-slate-800">11. Limitazione di Responsabilità</h2>
 
         <div className="rounded-xl border-l-4 border-red-500 bg-red-50 px-5 py-4">
           <strong>IL SERVIZIO È FORNITO &quot;COSÌ COM&apos;È&quot; (AS IS)</strong>
         </div>
 
         <div className="space-y-3">
-          <h3 className="text-xl font-semibold text-slate-700">10.1 Esclusione di Garanzie</h3>
+          <h3 className="text-xl font-semibold text-slate-700">11.1 Esclusione di Garanzie</h3>
           <p>Nei limiti consentiti dalla legge, escludiamo ogni garanzia, espressa o implicita, incluse:</p>
           <ul className="list-disc space-y-2 pl-6">
             <li>Garanzie di commerciabilità o idoneità per uno scopo particolare</li>
@@ -349,7 +501,7 @@ export default function Page() {
         </div>
 
         <div className="space-y-3">
-          <h3 className="text-xl font-semibold text-slate-700">10.2 Limitazione Danni</h3>
+          <h3 className="text-xl font-semibold text-slate-700">11.2 Limitazione Danni</h3>
           <p>In nessun caso saremo responsabili per:</p>
           <ul className="list-disc space-y-2 pl-6">
             <li>Danni indiretti, incidentali, speciali o consequenziali</li>
@@ -361,7 +513,7 @@ export default function Page() {
         </div>
 
         <div className="space-y-3">
-          <h3 className="text-xl font-semibold text-slate-700">10.3 Limite Massimo</h3>
+          <h3 className="text-xl font-semibold text-slate-700">11.3 Limite Massimo</h3>
           <p>La nostra responsabilità totale nei tuoi confronti, per qualsiasi causa, è limitata al <strong>maggiore tra</strong>:</p>
           <ul className="list-disc space-y-2 pl-6">
             <li>L&apos;importo pagato per l&apos;abbonamento negli ultimi 12 mesi</li>
@@ -370,7 +522,7 @@ export default function Page() {
         </div>
 
         <div className="space-y-3">
-          <h3 className="text-xl font-semibold text-slate-700">10.4 Eccezioni</h3>
+          <h3 className="text-xl font-semibold text-slate-700">11.4 Eccezioni</h3>
           <p>Le limitazioni di cui sopra non si applicano in caso di:</p>
           <ul className="list-disc space-y-2 pl-6">
             <li>Dolo o colpa grave</li>
@@ -381,7 +533,7 @@ export default function Page() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="text-2xl font-semibold tracking-tight text-slate-800">11. Indennizzo</h2>
+        <h2 className="text-2xl font-semibold tracking-tight text-slate-800">12. Indennizzo</h2>
         <p>Accetti di indennizzare, difendere e manlevare il Titolare da qualsiasi reclamo, danno, perdita, responsabilità e spesa (incluse le spese legali) derivanti da:</p>
         <ul className="list-disc space-y-2 pl-6">
           <li>Il tuo utilizzo del Servizio</li>
@@ -392,10 +544,10 @@ export default function Page() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="text-2xl font-semibold tracking-tight text-slate-800">12. Modifiche al Servizio e ai Termini</h2>
+        <h2 className="text-2xl font-semibold tracking-tight text-slate-800">13. Modifiche al Servizio e ai Termini</h2>
 
         <div className="space-y-3">
-          <h3 className="text-xl font-semibold text-slate-700">12.1 Modifiche al Servizio</h3>
+          <h3 className="text-xl font-semibold text-slate-700">13.1 Modifiche al Servizio</h3>
           <p>Ci riserviamo il diritto di:</p>
           <ul className="list-disc space-y-2 pl-6">
             <li>Aggiungere, modificare o rimuovere funzionalità</li>
@@ -405,7 +557,7 @@ export default function Page() {
         </div>
 
         <div className="space-y-3">
-          <h3 className="text-xl font-semibold text-slate-700">12.2 Modifiche ai Termini</h3>
+          <h3 className="text-xl font-semibold text-slate-700">13.2 Modifiche ai Termini</h3>
           <p>Possiamo aggiornare questi Termini. In caso di modifiche sostanziali:</p>
           <ul className="list-disc space-y-2 pl-6">
             <li>Ti avviseremo via email e/o notifica in-app</li>
@@ -416,10 +568,10 @@ export default function Page() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="text-2xl font-semibold tracking-tight text-slate-800">13. Sospensione e Terminazione</h2>
+        <h2 className="text-2xl font-semibold tracking-tight text-slate-800">14. Sospensione e Terminazione</h2>
 
         <div className="space-y-3">
-          <h3 className="text-xl font-semibold text-slate-700">13.1 Terminazione da Parte Tua</h3>
+          <h3 className="text-xl font-semibold text-slate-700">14.1 Terminazione da Parte Tua</h3>
           <p>Puoi terminare il tuo account in qualsiasi momento da:</p>
           <ul className="list-disc space-y-2 pl-6">
             <li>Impostazioni → Account → Elimina account</li>
@@ -428,7 +580,7 @@ export default function Page() {
         </div>
 
         <div className="space-y-3">
-          <h3 className="text-xl font-semibold text-slate-700">13.2 Terminazione da Parte Nostra</h3>
+          <h3 className="text-xl font-semibold text-slate-700">14.2 Terminazione da Parte Nostra</h3>
           <p>Possiamo sospendere o terminare il tuo account se:</p>
           <ul className="list-disc space-y-2 pl-6">
             <li>Violi questi Termini</li>
@@ -439,7 +591,7 @@ export default function Page() {
         </div>
 
         <div className="space-y-3">
-          <h3 className="text-xl font-semibold text-slate-700">13.3 Effetti della Terminazione</h3>
+          <h3 className="text-xl font-semibold text-slate-700">14.3 Effetti della Terminazione</h3>
           <p>Alla terminazione:</p>
           <ul className="list-disc space-y-2 pl-6">
             <li>Perderai l&apos;accesso ai dati sincronizzati nel cloud</li>
@@ -451,24 +603,24 @@ export default function Page() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="text-2xl font-semibold tracking-tight text-slate-800">14. Legge Applicabile e Foro Competente</h2>
+        <h2 className="text-2xl font-semibold tracking-tight text-slate-800">15. Legge Applicabile e Foro Competente</h2>
         <p>Questi Termini sono regolati dalla <strong>legge italiana</strong>.</p>
         <p>Per qualsiasi controversia è competente in via esclusiva il <strong>Foro di Napoli</strong>, salvo diversa disposizione inderogabile di legge (es. foro del consumatore).</p>
 
         <div className="space-y-3">
-          <h3 className="text-xl font-semibold text-slate-700">14.1 Diritti dei Consumatori UE</h3>
+          <h3 className="text-xl font-semibold text-slate-700">15.1 Diritti dei Consumatori UE</h3>
           <p>Se sei un consumatore residente nell&apos;Unione Europea, restano salvi i diritti previsti dalla normativa del tuo paese di residenza, incluso il diritto di adire il giudice del luogo di residenza.</p>
         </div>
       </section>
 
       <section className="space-y-4">
-        <h2 className="text-2xl font-semibold tracking-tight text-slate-800">15. Risoluzione Alternativa delle Controversie</h2>
+        <h2 className="text-2xl font-semibold tracking-tight text-slate-800">16. Risoluzione Alternativa delle Controversie</h2>
         <p>In caso di controversia, ti invitiamo a contattarci prima di intraprendere azioni legali. Faremo del nostro meglio per risolvere il problema in modo amichevole.</p>
         <p><strong>Piattaforma ODR:</strong> Se sei un consumatore UE, puoi utilizzare la piattaforma di risoluzione delle controversie online della Commissione Europea: <a className="text-blue-600 underline-offset-4 hover:underline" href="https://ec.europa.eu/consumers/odr" target="_blank" rel="noopener noreferrer">https://ec.europa.eu/consumers/odr</a></p>
       </section>
 
       <section className="space-y-4">
-        <h2 className="text-2xl font-semibold tracking-tight text-slate-800">16. Disposizioni Generali</h2>
+        <h2 className="text-2xl font-semibold tracking-tight text-slate-800">17. Disposizioni Generali</h2>
         <ul className="list-disc space-y-2 pl-6">
           <li><strong>Intero Accordo:</strong> Questi Termini, insieme alla Privacy Policy, costituiscono l&apos;intero accordo tra te e noi</li>
           <li><strong>Rinuncia:</strong> Il mancato esercizio di un diritto non costituisce rinuncia</li>
@@ -479,7 +631,7 @@ export default function Page() {
       </section>
 
       <section className="space-y-4">
-        <h2 className="text-2xl font-semibold tracking-tight text-slate-800">17. Contatti</h2>
+        <h2 className="text-2xl font-semibold tracking-tight text-slate-800">18. Contatti</h2>
         <div className="rounded-xl border border-slate-200 bg-violet-50 px-5 py-4 space-y-4">
           <div>
             <p className="font-semibold">Per domande sui Termini:</p>
@@ -499,7 +651,7 @@ export default function Page() {
       </section>
 
       <footer className="border-t border-slate-200 pt-6 text-sm text-slate-500">
-        <p>© 2024 DocSalute. Tutti i diritti riservati.</p>
+        <p>© 2024 Helsa. Tutti i diritti riservati.</p>
         <p>Questi Termini sono redatti in conformità al Codice del Consumo (D.Lgs. 206/2005) e al Codice Civile italiano.</p>
       </footer>
     </LegalLayout>

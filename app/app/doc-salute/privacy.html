@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Privacy Policy - DocSalute</title>
+    <title>Privacy Policy - Helsa</title>
     <style>
       * {
         margin: 0;
@@ -153,15 +153,15 @@
     <div class="container">
       <h1>Informativa sulla Privacy</h1>
       <p class="last-updated">
-        Ultimo aggiornamento: 3 Dicembre 2024 | Versione 1.0
+        Ultimo aggiornamento: 13 Dicembre 2024 | Versione 1.1
       </p>
 
       <div class="highlight">
-        <strong>Sintesi:</strong> DocSalute raccoglie i tuoi dati sanitari per
+        <strong>Sintesi:</strong> Helsa raccoglie i tuoi dati sanitari per
         permetterti di archiviarli e gestirli. I dati sono criptati,
         sincronizzati in modo sicuro sui nostri server e
         <strong>non vengono mai venduti a terzi</strong>. Utilizziamo servizi di
-        terze parti per autenticazione, storage, pagamenti e monitoraggio
+        terze parti per autenticazione, storage, pagamenti, analytics e monitoraggio
         errori.
       </div>
 
@@ -169,11 +169,8 @@
       <p>Il Titolare del trattamento dei dati personali è:</p>
       <div class="contact-box" style="margin-top: 15px; margin-bottom: 0">
         <p>
-          <strong>Marino Bisceglia</strong><br />
-          Email: <a href="mailto:marino@docsalute.app">marino@docsalute.app</a
-          ><br />
-          PEC:
-          <a href="mailto:marinobisceglia@pec.it">marinobisceglia@pec.it</a>
+          <strong>Marino Panariello</strong><br />
+          Email: <a href="mailto:marinopanariello@gmail.com">marinopanariello@gmail.com</a>
         </p>
       </div>
 
@@ -293,11 +290,16 @@
           <td>Analytics aggregate</td>
           <td>2 anni</td>
         </tr>
+        <tr>
+          <td>Eventi di utilizzo app</td>
+          <td>Analytics prodotto (PostHog)</td>
+          <td>2 anni</td>
+        </tr>
       </table>
 
       <h3>2.4 Dati di Pagamento</h3>
       <p>
-        DocSalute <strong>non memorizza</strong> direttamente dati di carte di
+        Helsa <strong>non memorizza</strong> direttamente dati di carte di
         credito o metodi di pagamento. I pagamenti sono gestiti da:
       </p>
       <ul>
@@ -345,8 +347,8 @@
           <td>Dati tecnici, crash report</td>
         </tr>
         <tr>
-          <td>Analytics e miglioramento servizio</td>
-          <td>Art. 6.1.a - Consenso</td>
+          <td>Analytics prodotto e miglioramento servizio</td>
+          <td>Art. 6.1.f - Legittimo interesse</td>
           <td>Dati di utilizzo anonimizzati</td>
         </tr>
         <tr>
@@ -423,7 +425,44 @@
         </tr>
       </table>
 
-      <h3>4.3 RevenueCat Inc.</h3>
+      <h3>4.3 PostHog Inc.</h3>
+      <table>
+        <tr>
+          <th>Ruolo</th>
+          <td>Product analytics e analisi comportamento utente</td>
+        </tr>
+        <tr>
+          <th>Dati trattati</th>
+          <td>Eventi di utilizzo app, ID utente anonimizzato, info dispositivo, azioni nell'app</td>
+        </tr>
+        <tr>
+          <th>Sede</th>
+          <td>USA con <strong>server EU</strong> (eu.i.posthog.com)</td>
+        </tr>
+        <tr>
+          <th>Garanzie</th>
+          <td>SOC 2 Type II, GDPR compliant, Data Processing Addendum</td>
+        </tr>
+        <tr>
+          <th>Privacy Policy</th>
+          <td>
+            <a href="https://posthog.com/privacy" target="_blank"
+              >posthog.com/privacy</a
+            >
+          </td>
+        </tr>
+      </table>
+
+      <p><strong>Dettagli sull'utilizzo di PostHog:</strong></p>
+      <ul>
+        <li>Utilizziamo server EU per garantire che i dati restino nell'Unione Europea</li>
+        <li>Raccogliamo eventi del ciclo di vita dell'app (apertura, chiusura, background)</li>
+        <li>Gli eventi vengono aggregati e anonimizzati</li>
+        <li>Non raccogliamo contenuti di documenti o dati sanitari tramite analytics</li>
+        <li>Puoi richiedere la cancellazione dei tuoi dati analytics contattandoci</li>
+      </ul>
+
+      <h3>4.4 RevenueCat Inc.</h3>
       <table>
         <tr>
           <th>Ruolo</th>
@@ -451,7 +490,7 @@
         </tr>
       </table>
 
-      <h3>4.4 Apple Inc. / Google LLC</h3>
+      <h3>4.5 Apple Inc. / Google LLC</h3>
       <table>
         <tr>
           <th>Ruolo</th>
@@ -475,7 +514,7 @@
         </tr>
       </table>
 
-      <h3>4.5 Expo / React Native (Meta)</h3>
+      <h3>4.6 Expo / React Native (Meta)</h3>
       <table>
         <tr>
           <th>Ruolo</th>
@@ -495,18 +534,6 @@
         </tr>
       </table>
 
-      <h3>4.6 Analytics (Futuro)</h3>
-      <p>
-        Potremmo implementare servizi di analytics per comprendere l'utilizzo
-        dell'app. In tal caso:
-      </p>
-      <ul>
-        <li>Raccoglieremo solo dati aggregati e anonimizzati</li>
-        <li>Ti chiederemo il consenso esplicito al primo avvio</li>
-        <li>Potrai disattivare il tracciamento dalle Impostazioni</li>
-        <li>Aggiorneremo questa informativa con i dettagli specifici</li>
-      </ul>
-
       <h2>5. Trasferimento Dati Extra-UE</h2>
       <p>
         Alcuni dei nostri fornitori hanno sede negli Stati Uniti. Il
@@ -522,6 +549,7 @@
           certificati
         </li>
         <li><strong>Binding Corporate Rules</strong> - Ove applicabili</li>
+        <li><strong>Server EU</strong> - Ove disponibili (Supabase, PostHog, Sentry)</li>
       </ul>
       <p>
         Puoi richiedere copia delle garanzie appropriate contattandoci
@@ -554,6 +582,11 @@
           <td>Log tecnici</td>
           <td>90 giorni</td>
           <td>N/A (anonimizzati)</td>
+        </tr>
+        <tr>
+          <td>Dati analytics (PostHog)</td>
+          <td>2 anni</td>
+          <td>Anonimizzati/cancellati su richiesta</td>
         </tr>
         <tr>
           <td>Dati di fatturazione</td>
@@ -654,7 +687,7 @@
         </li>
         <li>
           <strong>Email:</strong> Scrivi a
-          <a href="mailto:privacy@docsalute.app">privacy@docsalute.app</a>
+          <a href="mailto:marinopanariello@gmail.com">marinopanariello@gmail.com</a>
         </li>
       </ol>
       <p>La cancellazione comporta:</p>
@@ -662,12 +695,13 @@
         <li>Eliminazione irreversibile di tutti i documenti e allegati</li>
         <li>Rimozione dei dati dai server entro 30 giorni</li>
         <li>Purging dei backup entro 60 giorni</li>
+        <li>Cancellazione/anonimizzazione dei dati analytics</li>
         <li>Conservazione dei soli dati necessari per obblighi legali</li>
       </ul>
 
       <h2>10. Minori</h2>
       <p>
-        DocSalute non è destinato a minori di 16 anni. Non raccogliamo
+        Helsa non è destinato a minori di 16 anni. Non raccogliamo
         consapevolmente dati di minori di 16 anni senza il consenso verificabile
         di un genitore o tutore.
       </p>
@@ -692,10 +726,13 @@
         <li>
           <strong>SQLite:</strong> Per archiviazione offline dei documenti
         </li>
+        <li>
+          <strong>PostHog SDK:</strong> Per analytics di prodotto (con server EU)
+        </li>
       </ul>
       <p>
         Per maggiori dettagli, consulta la nostra
-        <a href="cookie-policy.html">Cookie Policy</a>.
+        <a href="cookie.html">Cookie Policy</a>.
       </p>
 
       <h2>12. Modifiche alla Privacy Policy</h2>
@@ -738,22 +775,19 @@
         <h4>Per questioni relative alla privacy:</h4>
         <p>
           Email:
-          <a href="mailto:privacy@docsalute.app">privacy@docsalute.app</a>
+          <a href="mailto:marinopanariello@gmail.com">marinopanariello@gmail.com</a>
         </p>
 
         <h4>Supporto tecnico:</h4>
         <p>
           Email:
-          <a href="mailto:support@docsalute.app">support@docsalute.app</a>
+          <a href="mailto:marinopanariello@gmail.com">marinopanariello@gmail.com</a>
         </p>
 
         <h4>Titolare del trattamento:</h4>
         <p>
-          Marino Bisceglia<br />
-          Email: <a href="mailto:marino@docsalute.app">marino@docsalute.app</a
-          ><br />
-          PEC:
-          <a href="mailto:marinobisceglia@pec.it">marinobisceglia@pec.it</a>
+          Marino Panariello<br />
+          Email: <a href="mailto:marinopanariello@gmail.com">marinopanariello@gmail.com</a>
         </p>
       </div>
 
@@ -765,7 +799,7 @@
           font-size: 13px;
         "
       >
-        © 2024 DocSalute. Tutti i diritti riservati.<br />
+        © 2024 Helsa. Tutti i diritti riservati.<br />
         Questa informativa è stata redatta in conformità al Regolamento UE
         2016/679 (GDPR).
       </p>
