@@ -628,20 +628,28 @@
       <h3>Access to Your Files</h3>
 
       <div class="highlight">
-        <strong>Privacy by Design:</strong> The files you upload (documents, reports, images) are protected and <strong>even our team cannot access them</strong>.
+        <strong>Privacy by Design:</strong> The files you upload (documents, reports, images) are protected. <strong>Our team will not access your data without a legitimate reason</strong>.
       </div>
 
       <p>
-        We have implemented technical measures that prevent anyone, including system administrators, from viewing the content of your health files:
+        We have implemented technical and organizational measures to protect your health files:
       </p>
 
       <ul>
         <li><strong>Row Level Security (RLS):</strong> Each file is accessible exclusively by the owner through their own JWT authentication</li>
-        <li><strong>No admin keys for files:</strong> There are no administrative credentials that allow access to user content</li>
+        <li><strong>Access restrictions:</strong> Administrative access to user content is strictly limited and controlled</li>
         <li><strong>Audit trail:</strong> Every data access is tracked and verifiable</li>
       </ul>
 
-      <p><strong>For technical support, we can only see:</strong></p>
+      <p><strong>We may access your data only for:</strong></p>
+      <ul>
+        <li>Providing technical support at your request</li>
+        <li>Account recovery assistance</li>
+        <li>Investigating security incidents or abuse</li>
+        <li>Complying with legal obligations (e.g., court orders)</li>
+      </ul>
+
+      <p><strong>For routine technical support, we typically only view:</strong></p>
       <ul>
         <li>File metadata (name, creation date, size)</li>
         <li>Synchronization status</li>
@@ -650,7 +658,7 @@
       </ul>
 
       <p>
-        This architecture ensures that your health data remains private even in case of technical support requests or system maintenance.
+        This architecture ensures that your health data remains private during normal operations and technical support requests.
       </p>
 
       <h2>8. Your Rights (Art. 15-22 GDPR)</h2>
